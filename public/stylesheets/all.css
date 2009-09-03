@@ -1,0 +1,71 @@
+﻿/* RESET - version: 2.7.0 */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+/* /RESET */
+/* HTML */
+* { margin:0; padding:0; }
+html, body { height:100%; background-color:#cccccc; text-align:center; }
+html { overflow:auto; }
+body, div, dd, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, span, td, th, ul { font: 15px/20px Verdana, Arial, sans-serif; color:#000; }
+a { color:#ff0000; font-weight:bold; text-decoration:none; border:none; outline:none; }
+a:hover, a.hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#0000ff; text-decoration:none; }
+img { border:none; }
+p { padding:10px 0; }
+strong, b { font-weight:bold; }
+em, i { font-style:italic; }
+h1, h2, h3, h4, h5, h6 { color:#000; font-weight:bold; padding:10px 0; }
+h1, h1 a { font-size:26px; line-height:30px; padding-top:0; }
+h2, h2 a { font-size:26px; line-height:30px; }
+h3, h3 a { font-size:22px; line-height:26px; }
+h4, h4 a { font-size:18px; line-height:22px; }
+h5, h5 a { font-size:16px; line-height:20px; }
+h6, h6 a { font-size:16px; line-height:20px; }
+table { width:100%; padding:10px 0; }
+th { font-weight:bold; }
+td, th { padding:5px; }
+ul, ol { padding:10px 10px 10px 30px; }
+ul li { padding:0 0 8px 10px; list-style:none; background:transparent url(../images/bullet.gif) 0 7px no-repeat; line-height:20px; }
+ol li { padding:0 0 8px 0; margin:0 0 0 10px; list-style:decimal; }
+blockquote { font-size:16px; color:#76888a; line-height:24px; font-style:italic; padding:10px 0; }
+blockquote p { padding:0 }
+hr { border:0 #e2e6e6 solid; border-top-width:5px; clear:both; height:5px; margin:10px 0; }
+label { font-weight:bold; font-size:13px; display:block; margin:0 0 2px 0; }
+label.radio { display:inline; padding-left:3px; font-size:13px; }
+input.inputField { border:1px solid #bccccd; width:450px; padding:2px; margin-bottom:8px; }
+textarea { border:1px solid #bccccd; display:block; margin-bottom:8px; overflow:auto; }
+select { width:200px; border:1px solid #bccccd; padding:2px; display:block; margin-bottom:8px; }
+fieldset { margin-bottom:8px; }
+/* /HTML */
+/* CLASSES */
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.clearLeft {clear:left;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.clearRight {clear:right;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+
+.alignLeft { text-align:left; }
+.alignCenter { text-align:center; }
+.alignRight { text-align:right; }
+.floatLeft { float:left; margin:0 14px 14px 0; }
+.floatRight { float:right; margin:0 0 14px 14px; }
+.inlineImage { }
+
+.alert, .required { color:#ff0000; }
+.photoDetail, .photoCredit { font-size:12px; color:#6d8084; line-height:17px; }
+.photoDetail { padding:6px 0 0 0; font-weight:bold; float:left; }
+.photoCredit {  }
+/* /CLASSES */
+/* LAYOUT */
+#layoutContainer { background:#fff; width:940px; margin:0 auto; text-align:left; }
+#header { padding:40px 20px; }
+#nav, #nav li { padding:0; margin:0; background:none; }
+#nav { height:13px; overflow:hidden; }
+#nav li { float:left; }
+#nav li a { display:block; height:13px; text-indent:-2000px; }
+#ourGoal { width:114px; background:url(../images/nav/ourGoal.gif) no-repeat; }
+#ourSchools { width:157px; background:url(../images/nav/ourSchools.gif) no-repeat; }
+#forStudents { width:261px; background:url(../images/nav/forStudents.gif) no-repeat; }
+#getInvolved { width:149px; background:url(../images/nav/getInvolved.gif) no-repeat; }
+#nav li a.on { background-position:0px -26px; }
+#nav li a:hover { background-position:0px -13px; }
+
+#main { padding:0 20px 40px 20px; }
+#footer {  }
+/* /LAYOUT */
