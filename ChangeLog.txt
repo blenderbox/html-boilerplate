@@ -18,6 +18,8 @@
 
 ============================================================
 
-2009-09-02 CEB - Updated correct path for IE6 stylesheet
+2009-10-19 CEB - Added XHTML requirement
 
 2009-09-30 CEB - Updated the Reset CSS in the all.css file
+
+2009-09-02 CEB - Updated correct path for IE6 stylesheet
