@@ -6,7 +6,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 html, body { height:100%; background-color:#cccccc; text-align:center; }
 html { overflow:auto; }
 body, div, dd, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, span, td, th, ul { font: 15px/20px Verdana, Arial, sans-serif; color:#000; }
-a { color:#ff0000; font-weight:bold; text-decoration:none; border:none; outline:none; }
+a { color:#ff0000; text-decoration:none; border:none; outline:none; }
 a:hover, a.hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#0000ff; text-decoration:none; }
 img { border:none; }
 p { padding:10px 0; }
