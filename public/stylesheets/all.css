@@ -1,5 +1,10 @@
-/* RESET - version: 2.8.0r4 */
-html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+/* RESET Eric Meyer's - v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+/* remember to define focus styles! */
+:focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+
 /* /RESET */
 /* HTML */
 * { margin:0; padding:0; }
@@ -24,16 +29,22 @@ th { font-weight:bold; }
 td, th { padding:5px; }
 ul, ol { padding:10px 10px 10px 30px; }
 ul li { padding:0 0 8px 10px; list-style:none; background:transparent url(../images/bullet.gif) 0 7px no-repeat; line-height:20px; }
+ol { font-size:13px; }
 ol li { padding:0 0 8px 0; margin:0 0 0 10px; list-style:decimal; }
 blockquote { font-size:16px; color:#76888a; line-height:24px; font-style:italic; padding:10px 0; }
 blockquote p { padding:0 }
 hr { border:0 #e2e6e6 solid; border-top-width:5px; clear:both; height:5px; margin:10px 0; }
-label { font-weight:bold; font-size:13px; display:block; margin:0 0 2px 0; }
-label.radio { display:inline; padding-left:3px; font-size:13px; }
-input.inputField { border:1px solid #bccccd; width:450px; padding:2px; margin-bottom:8px; }
+input[type=submit],label,select,.pointer { cursor:pointer; }  
+input[type=text], input[type=password], input.inputField { border:1px solid #bccccd; width:450px; padding:2px; margin-bottom:8px; }
 textarea { border:1px solid #bccccd; display:block; margin-bottom:8px; overflow:auto; }
 select { width:200px; border:1px solid #bccccd; padding:2px; display:block; margin-bottom:8px; }
 fieldset { margin-bottom:8px; }
+label { font-weight:bold; font-size:13px; display:block; margin:0 0 2px 0; }
+label.radio { display:inline; padding-left:3px; font-size:13px; }
+
+::selection { background:#c3effd; color:#000; }
+::-moz-selection { background:#c3effd; color:#000; } 
+:focus {  }
 /* /HTML */
 /* CLASSES */
 .clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
@@ -43,28 +54,41 @@ fieldset { margin-bottom:8px; }
 .alignLeft { text-align:left; }
 .alignCenter { text-align:center; }
 .alignRight { text-align:right; }
-.floatLeft { float:left; margin:0 14px 14px 0; }
-.floatRight { float:right; margin:0 0 14px 14px; }
-.inlineImage { }
+.floatLeft { float:left; }
+.floatRight { float:right; }
+.inlineImage { display:inline; }
 
 .alert, .required { color:#ff0000; }
-.photoDetail, .photoCredit { font-size:12px; color:#6d8084; line-height:17px; }
-.photoDetail { padding:6px 0 0 0; font-weight:bold; float:left; }
-.photoCredit {  }
 /* /CLASSES */
 /* LAYOUT */
-#layoutContainer { background:#fff; width:940px; margin:0 auto; text-align:left; }
-#header { padding:40px 20px; }
+#layoutContainer { background:#fff; width:960px; margin:0 auto; text-align:left; height:auto !important; min-height:500px; height:500px; }
+#header { padding:40px 0; }
+
 #nav, #nav li { padding:0; margin:0; background:none; }
-#nav { height:13px; overflow:hidden; }
+#nav { height:33px; width:960px; overflow:hidden; background:url(../images/backgrounds/nav.png) no-repeat; }
 #nav li { float:left; }
-#nav li a { display:block; height:13px; text-indent:-2000px; }
-#ourGoal { width:114px; background:url(../images/nav/ourGoal.gif) no-repeat; }
-#ourSchools { width:157px; background:url(../images/nav/ourSchools.gif) no-repeat; }
-#forStudents { width:261px; background:url(../images/nav/forStudents.gif) no-repeat; }
-#getInvolved { width:149px; background:url(../images/nav/getInvolved.gif) no-repeat; }
-#nav li a.on { background-position:0px -26px; }
-#nav li a:hover { background-position:0px -13px; }
+#nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; text-indent:-9999px; display:block; height:33px; }
+
+#nav li#learning a { width:185px; background-position:0px 0px; }
+#nav li#assessment a { width:171px; background-position:-185px 0px; }
+#nav li#culture a { width:90px; background-position:-357px 0px; }
+#nav li#aligned a { width:135px; background-position:-446px 0px; }
+#nav li#personal a { width:186px; background-position:-581px 0px; }
+#nav li#operations a { width:193px; background-position:-767px 0px; }
+
+#nav li#learning a:hover { background-position:0px -66px; }
+#nav li#assessment a.on { background-position:-185px -66px; }
+#nav li#culture a.on { background-position:-357px -66px; }
+#nav li#aligned a.on { background-position:-446px -66px; }
+#nav li#personal a.on { background-position:-581px -66px; }
+#nav li#operations a.on { background-position:-767px -66px; }
+
+#nav li#learning a:hover { background-position:0px -33px; }
+#nav li#assessment a:hover { background-position:-185px -33px; }
+#nav li#culture a:hover { background-position:-357px -33px; }
+#nav li#aligned a:hover { background-position:-446px -33px; }
+#nav li#personal a:hover { background-position:-581px -33px; }
+#nav li#operations a:hover { background-position:-767px -33px; }
 
 #main { padding:0 20px 40px 20px; }
 #footer {  }
