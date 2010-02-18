@@ -25,3 +25,5 @@
 2009-09-02 CEB - Updated correct path for IE6 stylesheet
 
 2010-01-27 CEB - Updated all.css to use Eric Meyer's stylesheet
+
+2010-02-18 CEB - Added a standard for naming convention and updated the README file
