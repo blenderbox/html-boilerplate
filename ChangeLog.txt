@@ -27,3 +27,5 @@
 2010-01-27 CEB - Updated all.css to use Eric Meyer's stylesheet
 
 2010-02-18 CEB - Added a standard for naming convention and updated the README file
+
+2010-02-24 CEB - Added the Priss - CSS Print Framework stylesheet to the print.css

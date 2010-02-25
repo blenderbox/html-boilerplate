@@ -43,13 +43,12 @@ label.radio { display:inline; padding-left:3px; font-size:13px; }
 
 ::selection { background:#c3effd; color:#000; }
 ::-moz-selection { background:#c3effd; color:#000; } 
-input:focus, select:focus, label:focus, textarea:focus, a:focus  { border:1px solid #c3effd; }
-
+input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px dotted #c3effd; }
 /* /HTML */
 /* CLASSES */
-.clear:after { clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0; }
-.clear-left:after { clear:left;display:block;overflow:hidden;visibility:hidden;width:0;height:0; }
-.clear-right:after { clear:right;display:block;overflow:hidden;visibility:hidden;width:0;height:0; }
+.clear:after, .clear-left:after, .clear-right:after { clear:both; content:" "; display:block; font-size:0; height:0; visibility:hidden; }
+.clear-left:after { clear:left; }
+.clear-right:after { clear:right; }
 
 .align-left { text-align:left; }
 .align-center { text-align:center; }
@@ -57,20 +56,19 @@ input:focus, select:focus, label:focus, textarea:focus, a:focus  { border:1px so
 .float-left { float:left; }
 .float-right { float:right; }
 .inline { display:inline; }
-
 .alert, .required { color:#ff0000; }
 /* /CLASSES */
 /* LAYOUT */
-/* the following are examples and should be */
 #layoutContainer { background:#fff; width:960px; margin:0 auto; text-align:left; height:auto !important; min-height:500px; height:500px; }
+#layout {  }
 #header { padding:40px 0; }
 
+/* This an example of navigation using a CSS sprite*/
 #nav, #nav li { padding:0; margin:0; background:none; }
 #nav { height:33px; width:960px; overflow:hidden; background:url(../images/backgrounds/nav.png) no-repeat; }
 #nav li { float:left; }
 #nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; text-indent:-9999px; display:block; height:33px; }
 
-/* This an example of navigation using a CSS sprite*/
 #nav li#learning a { width:185px; background-position:0px 0px; }
 #nav li#assessment a { width:171px; background-position:-185px 0px; }
 #nav li#culture a { width:90px; background-position:-357px 0px; }
