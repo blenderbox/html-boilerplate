@@ -4,6 +4,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 :focus { outline:0; }
 /* remember to highlight inserts somehow! */
 ins { text-decoration:none; }
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
 /* /RESET */
 /* HTML */
 * { margin:0; padding:0; }
@@ -33,8 +34,8 @@ ol li { padding:0 0 8px 0; margin:0 0 0 10px; list-style:decimal; }
 blockquote { font-size:16px; color:#76888a; line-height:24px; font-style:italic; padding:10px 0; }
 blockquote p { padding:0 }
 hr { border:0 #e2e6e6 solid; border-top-width:5px; clear:both; height:5px; margin:10px 0; }
-input[type='submit'],label,select,.pointer { cursor:pointer; }  
-input[type='text'], input[type='password'], input.inputField { border:1px solid #bccccd; width:450px; padding:2px; margin-bottom:8px; }
+input[type='submit'],label,select { cursor:pointer; }  
+input[type='text'], input[type='password'], input.input-field { border:1px solid #bccccd; width:450px; padding:2px; margin-bottom:8px; }
 textarea { border:1px solid #bccccd; display:block; margin-bottom:8px; overflow:auto; }
 select { width:200px; border:1px solid #bccccd; padding:2px; display:block; margin-bottom:8px; }
 fieldset { margin-bottom:8px; }
@@ -61,35 +62,38 @@ input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px do
 /* LAYOUT */
 #layoutContainer { background:#fff; width:960px; margin:0 auto; text-align:left; height:auto !important; min-height:500px; height:500px; }
 #layout {  }
-#header { padding:40px 0; }
+header { padding:20px 0; }
 
 /* This an example of navigation using a CSS sprite*/
-#nav, #nav li { padding:0; margin:0; background:none; }
-#nav { height:33px; width:960px; overflow:hidden; background:url(../images/backgrounds/nav.png) no-repeat; }
-#nav li { float:left; }
-#nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; text-indent:-9999px; display:block; height:33px; }
+nav ul, nav li { padding:0; margin:0; background:none; }
+nav { height:33px; width:960px; overflow:hidden; background:url(../images/backgrounds/nav.png) no-repeat; }
+nav li { float:left; }
+nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; text-indent:-9999px; display:block; height:33px; }
 
-#nav li#learning a { width:185px; background-position:0px 0px; }
-#nav li#assessment a { width:171px; background-position:-185px 0px; }
-#nav li#culture a { width:90px; background-position:-357px 0px; }
-#nav li#aligned a { width:135px; background-position:-446px 0px; }
-#nav li#personal a { width:186px; background-position:-581px 0px; }
-#nav li#operations a { width:193px; background-position:-767px 0px; }
+nav li#learning a { width:185px; background-position:0px 0px; }
+nav li#assessment a { width:171px; background-position:-185px 0px; }
+nav li#culture a { width:90px; background-position:-357px 0px; }
+nav li#aligned a { width:135px; background-position:-446px 0px; }
+nav li#personal a { width:186px; background-position:-581px 0px; }
+nav li#operations a { width:193px; background-position:-767px 0px; }
 
-#nav li#learning a:hover { background-position:0px -66px; }
-#nav li#assessment a.on { background-position:-185px -66px; }
-#nav li#culture a.on { background-position:-357px -66px; }
-#nav li#aligned a.on { background-position:-446px -66px; }
-#nav li#personal a.on { background-position:-581px -66px; }
-#nav li#operations a.on { background-position:-767px -66px; }
+nav li#learning a:hover { background-position:0px -66px; }
+nav li#assessment a.on { background-position:-185px -66px; }
+nav li#culture a.on { background-position:-357px -66px; }
+nav li#aligned a.on { background-position:-446px -66px; }
+nav li#personal a.on { background-position:-581px -66px; }
+nav li#operations a.on { background-position:-767px -66px; }
 
-#nav li#learning a:hover { background-position:0px -33px; }
-#nav li#assessment a:hover { background-position:-185px -33px; }
-#nav li#culture a:hover { background-position:-357px -33px; }
-#nav li#aligned a:hover { background-position:-446px -33px; }
-#nav li#personal a:hover { background-position:-581px -33px; }
-#nav li#operations a:hover { background-position:-767px -33px; }
+nav li#learning a:hover { background-position:0px -33px; }
+nav li#assessment a:hover { background-position:-185px -33px; }
+nav li#culture a:hover { background-position:-357px -33px; }
+nav li#aligned a:hover { background-position:-446px -33px; }
+nav li#personal a:hover { background-position:-581px -33px; }
+nav li#operations a:hover { background-position:-767px -33px; }
 
-#main { padding:0 20px 40px 20px; }
-#footer {  }
+article { float:left; padding:0 20px 40px 20px; width:600px; }
+
+footer { clear:both; padding:0 20px; }
+footer nav { background:none; height:auto; width:auto; }
+footer nav li a { background:none; text-indent:0px; }
 /* /LAYOUT */

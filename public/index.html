@@ -1,28 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-Type" content="text/html;charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Title</title>
-    <link href="favicon.ico" media="all" rel="shortcut icon" type="image/x-icon" />
-    <link href="stylesheets/all.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!--[if IE]><link href="stylesheets/all-ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]--> 
-    <!--[if lte IE 6]><link href="stylesheets/all-ie6.css" media="all" rel="stylesheet" type="text/css" /><![endif]--> 
+    <link href="favicon.ico" rel="shortcut icon" />
+    <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link href="stylesheets/all.css" media="all" rel="stylesheet" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" />
+    <!--[if IE]><link href="stylesheets/all-ie.css" media="all" rel="stylesheet" /><![endif]--> 
+    <!--[if lte IE 6]><link href="stylesheets/all-ie6.css" media="all" rel="stylesheet" /><![endif]--> 
 </head>
 <body>
     <div id="layoutContainer">
 		<div id="layout">
-	        <div id="header">
-	            <ul id="nav">
-	                <li id="learning"><a href="#" title="Learning &amp; Teaching">Learning &amp; Teaching</a></li>
-	                <li id="assessment"><a href="#" class="on" title="Assessment &amp; Data">Assessment &amp; Data</a></li>
-	                <li id="culture"><a href="#" title="Culture">Culture</a></li>
-	                <li id="aligned"><a href="#" title="Aligned Staff">Aligned Staff</a></li>
-					<li id="personal"><a href="#" title="Personal Leadership">Personal Leadership</a></li>
-					<li id="operations"><a href="#" title="Operations &amp; Systems">Operations &amp; Systems</a></li>
-	            </ul><!-- /nav -->
-	        </div><!-- /header -->
-	        <div id="main">
+	        <header>
+	            <hgroup>
+	                <h1>Header</h1>
+	                <h2>Sub Head</h2>
+	            </hgroup>
+                <nav>
+                    <ul>
+                        <li id="learning"><a href="#" title="Learning &amp; Teaching">Learning &amp; Teaching</a></li>
+                        <li id="assessment"><a href="#" class="on" title="Assessment &amp; Data">Assessment &amp; Data</a></li>
+                        <li id="culture"><a href="#" title="Culture">Culture</a></li>
+                        <li id="aligned"><a href="#" title="Aligned Staff">Aligned Staff</a></li>
+				        <li id="personal"><a href="#" title="Personal Leadership">Personal Leadership</a></li>
+				        <li id="operations"><a href="#" title="Operations &amp; Systems">Operations &amp; Systems</a></li>
+				    </ul>
+                </nav>
+	        </header>
+	        <article class="clear">
+	            <header>
+    	            <time datetime="2010-08-06">August 6th, 2010</time>
+    	            <h1>Article Header</h1>
+    	        </header>
 	            <p> 
 	            Here are the styles for the site
 	            </p>
@@ -77,7 +88,7 @@
 	         
 	            <hr/> 
 	         
-	            <table cellspacing="0" cellpadding="0" border="0"> 
+	            <table> 
 	                <tr> 
 		                <th>This is what a table heading looks like</th> 
 		                <th>This is what another table heading looks like</th> 
@@ -96,7 +107,7 @@
 	            <h2>Forms:</h2> 
 	            
 	            <label id="formFieldLabel" for="formField">This is what a form label looks like</label> 
-	            <input id="formField" value="This is an input field" class="inputField" /> 
+	            <input id="formField" class="input-field" type="text" value="This is an input field" /> 
 	        	
 	            <label id="passwordFieldLabel" for="passwordField">This is what a form label looks like</label> 
 	            <input id="passwordField" class="inputField" type="password" /> 
@@ -121,15 +132,23 @@
 	            <textarea id="textField" rows="10" cols="40">This is what a textarea looks like.</textarea> 
 	         
 	            <input type="submit" /> 
-	        </div> <!-- /main -->
-	        <div id="footer">
-	            <ul>
-	                <li>link 
+	        </article>
+	        <aside>
+	            <hgroup>
+        	        <h1>Aside</h1>
+        	        <h2>Aside 2</h2>
+    	        </hgroup>
+	        </aside>
+	        <footer>
+	            <nav>
 	                <ul>
-	                    <li>sublink</li>
-	                </ul></li>
-	            </ul>
-	        </div><!-- /footer -->
+	                    <li><a href="#" title="link">link</a>
+	                    <ul>
+	                        <li><a href="#" title="sublink">sublink</a></li>
+	                    </ul></li>
+	                </ul>
+	            </nav>
+	        </footer>
 		</div>
     </div><!-- /layoutContainer -->
     <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
