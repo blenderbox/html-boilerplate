@@ -12,7 +12,7 @@ html, body { background-color:#cccccc; height:100%; text-align:center; }
 html { overflow:auto; }
 body, div, dd, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, span, td, th, ul { color:#000; font:15px/20px Verdana, Arial, sans-serif; }
 a { color:#ff0000; text-decoration:none; }
-a:hover, a.hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#0000ff; text-decoration:none; }
+a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#0000ff; text-decoration:none; }
 img { border:none; }
 p { padding:10px 0; }
 strong, b { font-weight:bold; }
@@ -33,7 +33,7 @@ ol { font-size:13px; }
 ol li { list-style:decimal; margin:0 0 0 10px; padding:0 0 8px 0; }
 blockquote { color:#76888a; font-size:16px; font-style:italic; line-height:24px; padding:10px 0; }
 blockquote p { padding:0 }
-hr { border:0 #e2e6e6 solid; border-top-width:5px; clear:both; height:5px; margin:10px 0; }
+hr { border:0 #e2e6e6 solid; border-top-width:2px; clear:both; height:2px; margin:10px 0; }
 input[type='submit'],label,select { cursor:pointer; }  
 input[type='text'], input[type='password'], input.input-field { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
 textarea { border:1px solid #bccccd; display:block; margin-bottom:8px; overflow:auto; }
@@ -47,9 +47,12 @@ label.radio { display:inline; font-size:13px; padding-left:3px; }
 input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px dotted #c3effd; }
 /* /HTML */
 /* CLASSES */
-.clear:after, .clear-left:after, .clear-right:after { clear:both; content:" "; display:block; font-size:0; height:0; visibility:hidden; }
-.clear-left:after { clear:left; }
-.clear-right:after { clear:right; }
+.clear, .clear-left, .clear-right { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+.clear-left {clear:left;}
+.clear-right {clear:right;}
+.clearfix:after, .clearfix-left:after, .clearfix-right:after { clear:both; content:" "; display:block; font-size:0; height:0; visibility:hidden; }
+.clearfix-left:after { clear:left; }
+.clearfix-right:after { clear:right; }
 
 .align-left { text-align:left; }
 .align-center { text-align:center; }
@@ -93,7 +96,7 @@ nav li#operations a:hover { background-position:-767px -33px; }
 
 article { float:left; padding:0 20px 40px 20px; width:600px; }
 
-footer { clear:both; padding:0 20px; }
+footer { padding:0 20px; }
 footer nav { background:none; height:auto; width:auto; }
 footer nav li a { background:none; text-indent:0px; }
 /* /LAYOUT */
