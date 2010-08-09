@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 :focus { outline:0; }
 /* remember to highlight inserts somehow! */
 ins { text-decoration:none; }
-article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+article, aside, figure, footer, header, hgroup, menu, nav, section { display:block; }
 /* /RESET */
 /* HTML */
 * { margin:0; padding:0; }
@@ -28,7 +28,7 @@ table { padding:10px 0;  width:100%; }
 th { font-weight:bold; }
 td, th { padding:5px; }
 ul, ol { padding:10px 10px 10px 30px; }
-ul li { background:transparent url(../images/bullet.gif) 0 7px no-repeat; list-style:none; line-height:20px; padding:0 0 8px 10px; }
+ul li { background:transparent url(../images/bullet.gif) 0 7px no-repeat; line-height:20px; list-style:none; padding:0 0 8px 10px; }
 ol { font-size:13px; }
 ol li { list-style:decimal; margin:0 0 0 10px; padding:0 0 8px 0; }
 blockquote { color:#76888a; font-size:16px; font-style:italic; line-height:24px; padding:10px 0; }
