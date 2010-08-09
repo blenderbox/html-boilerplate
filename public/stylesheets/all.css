@@ -8,9 +8,9 @@ article, aside, figure, footer, header, hgroup, menu, nav, section { display: bl
 /* /RESET */
 /* HTML */
 * { margin:0; padding:0; }
-html, body { height:100%; background-color:#cccccc; text-align:center; }
+html, body { background-color:#cccccc; height:100%; text-align:center; }
 html { overflow:auto; }
-body, div, dd, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, span, td, th, ul { font:15px/20px Verdana, Arial, sans-serif; color:#000; }
+body, div, dd, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, span, td, th, ul { color:#000; font:15px/20px Verdana, Arial, sans-serif; }
 a { color:#ff0000; text-decoration:none; }
 a:hover, a.hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#0000ff; text-decoration:none; }
 img { border:none; }
@@ -24,23 +24,23 @@ h3, h3 a { font-size:22px; line-height:26px; }
 h4, h4 a { font-size:18px; line-height:22px; }
 h5, h5 a { font-size:16px; line-height:20px; }
 h6, h6 a { font-size:16px; line-height:20px; }
-table { width:100%; padding:10px 0; }
+table { padding:10px 0;  width:100%; }
 th { font-weight:bold; }
 td, th { padding:5px; }
 ul, ol { padding:10px 10px 10px 30px; }
-ul li { padding:0 0 8px 10px; list-style:none; background:transparent url(../images/bullet.gif) 0 7px no-repeat; line-height:20px; }
+ul li { background:transparent url(../images/bullet.gif) 0 7px no-repeat; list-style:none; line-height:20px; padding:0 0 8px 10px; }
 ol { font-size:13px; }
-ol li { padding:0 0 8px 0; margin:0 0 0 10px; list-style:decimal; }
-blockquote { font-size:16px; color:#76888a; line-height:24px; font-style:italic; padding:10px 0; }
+ol li { list-style:decimal; margin:0 0 0 10px; padding:0 0 8px 0; }
+blockquote { color:#76888a; font-size:16px; font-style:italic; line-height:24px; padding:10px 0; }
 blockquote p { padding:0 }
 hr { border:0 #e2e6e6 solid; border-top-width:5px; clear:both; height:5px; margin:10px 0; }
 input[type='submit'],label,select { cursor:pointer; }  
-input[type='text'], input[type='password'], input.input-field { border:1px solid #bccccd; width:450px; padding:2px; margin-bottom:8px; }
+input[type='text'], input[type='password'], input.input-field { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
 textarea { border:1px solid #bccccd; display:block; margin-bottom:8px; overflow:auto; }
-select { width:200px; border:1px solid #bccccd; padding:2px; display:block; margin-bottom:8px; }
+select { border:1px solid #bccccd; display:block; margin-bottom:8px; padding:2px; width:200px; }
 fieldset { margin-bottom:8px; }
 label { font-weight:bold; font-size:13px; display:block; margin:0 0 2px 0; }
-label.radio { display:inline; padding-left:3px; font-size:13px; }
+label.radio { display:inline; font-size:13px; padding-left:3px; }
 
 ::selection { background:#c3effd; color:#000; }
 ::-moz-selection { background:#c3effd; color:#000; } 
@@ -60,22 +60,22 @@ input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px do
 .alert, .required { color:#ff0000; }
 /* /CLASSES */
 /* LAYOUT */
-#layoutContainer { background:#fff; width:960px; margin:0 auto; text-align:left; height:auto !important; min-height:500px; height:500px; }
+#layoutContainer { background:#fff; height:auto !important; height:500px; margin:0 auto; min-height:500px; text-align:left; width:960px; }
 #layout {  }
 header { padding:20px 0; }
 
 /* This an example of navigation using a CSS sprite*/
-nav ul, nav li { padding:0; margin:0; background:none; }
-nav { height:33px; width:960px; overflow:hidden; background:url(../images/backgrounds/nav.png) no-repeat; }
+nav ul, nav li { background:none; margin:0; padding:0; }
+nav { background:url(../images/backgrounds/nav.png) no-repeat; height:33px; overflow:hidden; width:960px; }
 nav li { float:left; }
-nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; text-indent:-9999px; display:block; height:33px; }
+nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; display:block; height:33px; text-indent:-9999px; }
 
-nav li#learning a { width:185px; background-position:0px 0px; }
-nav li#assessment a { width:171px; background-position:-185px 0px; }
-nav li#culture a { width:90px; background-position:-357px 0px; }
-nav li#aligned a { width:135px; background-position:-446px 0px; }
-nav li#personal a { width:186px; background-position:-581px 0px; }
-nav li#operations a { width:193px; background-position:-767px 0px; }
+nav li#learning a { background-position:0px 0px; width:185px; }
+nav li#assessment a { background-position:-185px 0px; width:171px; }
+nav li#culture a { background-position:-357px 0px; width:90px; }
+nav li#aligned a { background-position:-446px 0px; width:135px; }
+nav li#personal a { background-position:-581px 0px; width:186px; }
+nav li#operations a { background-position:-767px 0px; width:193px; }
 
 nav li#learning a:hover { background-position:0px -66px; }
 nav li#assessment a.on { background-position:-185px -66px; }
