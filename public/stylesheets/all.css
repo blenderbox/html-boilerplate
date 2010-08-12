@@ -7,7 +7,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 :focus { outline:0; }
 /* /RESET */
 /* HTML */
-* { margin:0; padding:0; }
 html, body { background-color:#cccccc; height:100%; text-align:center; }
 html { overflow:auto; -webkit-font-smoothing:antialiased; }
 body,div,dd,dl,dt,h1,h2,h3,h4,h5,h6,li,ol,span,td,th,ul { color:#444; font:15px arial,verdana,sans-serif; line-height:1.22; }
@@ -18,20 +17,20 @@ p { padding:10px 0; }
 strong, b { font-weight:bold; }
 em, i { font-style:italic; }
 h1, h2, h3, h4, h5, h6 { color:#000; font-weight:bold; padding:10px 0; text-rendering:optimizeLegibility; }
-h1, h1 a { font-size:26px; line-height:30px; padding-top:0; }
-h2, h2 a { font-size:26px; line-height:30px; }
-h3, h3 a { font-size:22px; line-height:26px; }
-h4, h4 a { font-size:18px; line-height:22px; }
-h5, h5 a { font-size:16px; line-height:20px; }
-h6, h6 a { font-size:16px; line-height:20px; }
+h1, h1 a { font-size:26px; padding-top:0; }
+h2, h2 a { font-size:24px; }
+h3, h3 a { font-size:22px; }
+h4, h4 a { font-size:18px; }
+h5, h5 a { font-size:16px; }
+h6, h6 a { font-size:14px; }
 table { padding:10px 0;  width:100%; }
 th { font-weight:bold; }
 td, th { padding:5px; }
 ul, ol { padding:10px 10px 10px 30px; }
-ul li { background:transparent url(../images/bullet.gif) 0 7px no-repeat; line-height:20px; list-style:none; padding:0 0 8px 10px; }
+ul li { background:transparent url(../images/bullet.gif) 0 7px no-repeat; line-height:1.22; list-style:none; padding:0 0 8px 10px; }
 ol { font-size:13px; }
 ol li { list-style:decimal; margin:0 0 0 10px; padding:0 0 8px 0; }
-blockquote { color:#76888a; font-size:16px; font-style:italic; line-height:24px; padding:10px 0; }
+blockquote { color:#76888a; font-size:16px; font-style:italic; line-height:1.22; padding:10px 0; }
 blockquote p { padding:0 }
 hr { border:0 #e2e6e6 solid; border-top-width:2px; clear:both; display:block; height:2px; margin:10px 0; }
 code, pre { font-family:"Courier New", monospace, serif; font-size:1em; }
@@ -40,6 +39,7 @@ sup { vertical-align:super; font-size:smaller; }
 /* inputs/form fields */
 select, input, textarea { font:99% arial,helvetica,sans-serif; }
 input, select { vertical-align:middle; }
+button { overflow:visible; width:auto; }
 button, input[type='button'], input[type='submit'], label, select { cursor:pointer; } 
 input[type='text'], input[type='password'], input.input-field { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
 input[type="radio"] { vertical-align:text-bottom; }
@@ -50,10 +50,10 @@ fieldset { margin-bottom:8px; }
 label { font-weight:bold; font-size:13px; display:block; margin:0 0 2px 0; }
 label.radio { display:inline; font-size:13px; padding-left:3px; }
 
-::selection { background:#c3effd; color:#000; }
-::-moz-selection { background:#c3effd; color:#000; } 
-input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px dotted #c3effd; }
-button {  width:auto; overflow:visible; }
+::selection { background:#c01339; color:#fff; }
+::-moz-selection { background:#c01339; color:#fff; } 
+input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px dotted #c01339; }
+
 /* /HTML */
 /* CLASSES */
 .clear, .clear-left, .clear-right { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
@@ -81,34 +81,28 @@ header { padding:20px 0; }
 
 /* This an example of navigation using a CSS sprite*/
 nav ul, nav li { background:none; margin:0; padding:0; }
-nav { background:url(../images/backgrounds/nav.png) no-repeat; height:33px; overflow:hidden; width:960px; }
+nav { background:url(../images/backgrounds/nav.png) no-repeat; height:33px; overflow:hidden; }
 nav li { float:left; }
 nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; display:block; height:33px; text-indent:-9999px; }
 
 nav li#learning a { background-position:0px 0px; width:185px; }
 nav li#assessment a { background-position:-185px 0px; width:171px; }
 nav li#culture a { background-position:-357px 0px; width:90px; }
-nav li#aligned a { background-position:-446px 0px; width:135px; }
-nav li#personal a { background-position:-581px 0px; width:186px; }
-nav li#operations a { background-position:-767px 0px; width:193px; }
 
 nav li#learning a:hover { background-position:0px -66px; }
 nav li#assessment a.on { background-position:-185px -66px; }
 nav li#culture a.on { background-position:-357px -66px; }
-nav li#aligned a.on { background-position:-446px -66px; }
-nav li#personal a.on { background-position:-581px -66px; }
-nav li#operations a.on { background-position:-767px -66px; }
 
 nav li#learning a:hover { background-position:0px -33px; }
 nav li#assessment a:hover { background-position:-185px -33px; }
 nav li#culture a:hover { background-position:-357px -33px; }
-nav li#aligned a:hover { background-position:-446px -33px; }
-nav li#personal a:hover { background-position:-581px -33px; }
-nav li#operations a:hover { background-position:-767px -33px; }
 
 article { float:left; padding:0 20px 40px 20px; width:600px; }
+section {  }
 
 footer { padding:0 20px; }
 footer nav { background:none; height:auto; width:auto; }
 footer nav li a { background:none; text-indent:0px; }
 /* /LAYOUT */
+
+
