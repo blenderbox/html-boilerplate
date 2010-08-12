@@ -1,23 +1,23 @@
-/* RESET Eric Meyer's - v1.0 | 20080212 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; } body { line-height:1; } ol, ul { list-style:none; } blockquote, q { quotes:none; } blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; } del { text-decoration:line-through; } table { border-collapse:collapse; border-spacing:0; }
-/* remember to define focus styles! */
+/* 
+html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+v1.4 2009-07-27 | Authors:Eric Meyer & Richard Clark
+html5doctor.com/html-5-reset-stylesheet/
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; } article, aside, figure, footer, header, hgroup, nav, section { display:block; } nav ul { list-style:none; } blockquote, q { quotes:none; } blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; } a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; } ins { background-color:#ff9; color:#000; text-decoration:none; } mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; } del { text-decoration:line-through; } abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; } table { border-collapse:collapse; border-spacing:0; } /* tables still need cellspacing="0" in the markup */ 
 :focus { outline:0; }
-/* remember to highlight inserts somehow! */
-ins { text-decoration:none; }
-article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display:block; }
 /* /RESET */
 /* HTML */
 * { margin:0; padding:0; }
 html, body { background-color:#cccccc; height:100%; text-align:center; }
-html { overflow:auto; }
-body, div, dd, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, span, td, th, ul { color:#000; font:15px/20px Verdana, Arial, sans-serif; }
-a { color:#ff0000; text-decoration:none; }
-a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#0000ff; text-decoration:none; }
+html { overflow:auto; -webkit-font-smoothing:antialiased; }
+body,div,dd,dl,dt,h1,h2,h3,h4,h5,h6,li,ol,span,td,th,ul { color:#444; font:15px arial,verdana,sans-serif; line-height:1.22; }
+a { color:#f47a4d; text-decoration:none; }
+a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#c01339; text-decoration:none; }
 img { border:none; }
 p { padding:10px 0; }
 strong, b { font-weight:bold; }
 em, i { font-style:italic; }
-h1, h2, h3, h4, h5, h6 { color:#000; font-weight:bold; padding:10px 0; }
+h1, h2, h3, h4, h5, h6 { color:#000; font-weight:bold; padding:10px 0; text-rendering:optimizeLegibility; }
 h1, h1 a { font-size:26px; line-height:30px; padding-top:0; }
 h2, h2 a { font-size:26px; line-height:30px; }
 h3, h3 a { font-size:22px; line-height:26px; }
@@ -33,9 +33,17 @@ ol { font-size:13px; }
 ol li { list-style:decimal; margin:0 0 0 10px; padding:0 0 8px 0; }
 blockquote { color:#76888a; font-size:16px; font-style:italic; line-height:24px; padding:10px 0; }
 blockquote p { padding:0 }
-hr { border:0 #e2e6e6 solid; border-top-width:2px; clear:both; height:2px; margin:10px 0; }
-input[type='submit'],label,select { cursor:pointer; }  
+hr { border:0 #e2e6e6 solid; border-top-width:2px; clear:both; display:block; height:2px; margin:10px 0; }
+code, pre { font-family:"Courier New", monospace, serif; font-size:1em; }
+sub { vertical-align:sub; font-size:smaller; }
+sup { vertical-align:super; font-size:smaller; }
+/* inputs/form fields */
+select, input, textarea { font:99% arial,helvetica,sans-serif; }
+input, select { vertical-align:middle; }
+button, input[type='button'], input[type='submit'], label, select { cursor:pointer; } 
 input[type='text'], input[type='password'], input.input-field { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
+input[type="radio"] { vertical-align:text-bottom; }
+input[type="checkbox"] { vertical-align:bottom; *vertical-align:baseline; }
 textarea { border:1px solid #bccccd; display:block; margin-bottom:8px; overflow:auto; }
 select { border:1px solid #bccccd; display:block; margin-bottom:8px; padding:2px; width:200px; }
 fieldset { margin-bottom:8px; }
@@ -45,12 +53,16 @@ label.radio { display:inline; font-size:13px; padding-left:3px; }
 ::selection { background:#c3effd; color:#000; }
 ::-moz-selection { background:#c3effd; color:#000; } 
 input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px dotted #c3effd; }
+button {  width:auto; overflow:visible; }
 /* /HTML */
 /* CLASSES */
 .clear, .clear-left, .clear-right { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
 .clear-left {clear:left;}
 .clear-right {clear:right;}
-.clearfix:after, .clearfix-left:after, .clearfix-right:after { clear:both; content:" "; display:block; font-size:0; height:0; visibility:hidden; }
+.clearfix:after, .clearfix-left:after, .clearfix-right:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix, .clearfix-left:after, .clearfix-right:after { display:inline-block; }
+* html .clearfix, * html .clearfix-left:after, * html .clearfix-right:after { height:1%; } /* Hides from IE-mac \*/
+.clearfix, .clearfix-left:after, .clearfix-right:after { display:block; }
 .clearfix-left:after { clear:left; }
 .clearfix-right:after { clear:right; }
 
@@ -63,7 +75,7 @@ input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px do
 .alert, .required { color:#ff0000; }
 /* /CLASSES */
 /* LAYOUT */
-#layoutContainer { background:#fff; height:auto !important; height:500px; margin:0 auto; min-height:500px; text-align:left; width:960px; }
+#container { background:#fff; height:auto !important; height:500px; margin:0 auto; min-height:500px; text-align:left; width:960px; }
 #layout {  }
 header { padding:20px 0; }
 
