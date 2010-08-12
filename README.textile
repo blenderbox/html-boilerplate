@@ -1,4 +1,4 @@
-h2. Blenderbox HTML5Blenderbox Guidelines for HTML Templates Templates
+h2. Blenderbox HTML5 Templates
 
 ChangeLog.txt contains the history of the default html/css package.
 
