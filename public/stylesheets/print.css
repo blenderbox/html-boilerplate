@@ -2,13 +2,12 @@
 *         Priss - CSS Print Framework       *
 *   http://github.com/mikecrittenden/priss  *
 \*********************************************/
-
 /* BODY */
 body {width:100% !important;margin:0 !important;padding:0 !important;line-height:1.4;word-spacing:1.1pt;letter-spacing:0.2pt;font-family:Garamond,"Times New Roman", serif;color:#000;background:none;font-size:12pt;}
 /* HEADINGS */
 h1,h2,h3,h4,h5,h6 {font-family:Helvetica, Arial, sans-serif;} h1{font-size:19pt;} h2{font-size:17pt;} h3{font-size:15pt;} h4,h5,h6{font-size:12pt;}
 /* ELEMENTS */
-code {font:10pt Courier, monospace;}blockquote {margin:1.3em; padding:1em; font-size:10pt;} hr {background-color:#ccc;}
+code {font:10pt Courier, monospace;} blockquote {margin:1.3em; padding:1em; font-size:10pt;} hr {background-color:#ccc;}
 /* IMAGES */
 img {float:left; margin:1em 1.5em 1.5em 0;}a img {border:none;}
 
@@ -29,5 +28,3 @@ tr {page-break-inside:avoid;}
 
 /* HIDE UNNECESSARY ELEMENTS */
 header, footer, nav, aside {display:none;}
-
-

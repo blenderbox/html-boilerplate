@@ -52,7 +52,7 @@ label.radio { display:inline; font-size:13px; padding-left:3px; }
 
 ::selection { background:#c01339; color:#fff; }
 ::-moz-selection { background:#c01339; color:#fff; } 
-input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px dotted #c01339; }
+a:focus, button:focus, input:focus, label:focus, select:focus, textarea:focus { outline:1px dotted #c01339; }
 
 /* /HTML */
 /* CLASSES */
@@ -64,15 +64,13 @@ input:focus, select:focus, label:focus, textarea:focus, a:focus { outline:1px do
 .invisible { visibility: hidden; }
 
 .clear, .clear-left, .clear-right { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
-.clear-left {clear:left;}
-.clear-right {clear:right;}
 
 .clearfix:after, .clearfix-left:after, .clearfix-right:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
 .clearfix, .clearfix-left:after, .clearfix-right:after { display:inline-block; }
 * html .clearfix, * html .clearfix-left:after, * html .clearfix-right:after { height:1%; } /* Hides from IE-mac \*/
 .clearfix, .clearfix-left:after, .clearfix-right:after { display:block; }
-.clearfix-left:after { clear:left; }
-.clearfix-right:after { clear:right; }
+.clearfix-left:after, .clear-left { clear:left; }
+.clearfix-right:after, .clear-right { clear:right; }
 
 .align-left { text-align:left; }
 .align-center { text-align:center; }
@@ -106,9 +104,9 @@ nav li#learning a:hover { background-position:0px -33px; }
 nav li#assessment a:hover { background-position:-185px -33px; }
 nav li#culture a:hover { background-position:-357px -33px; }
 
-article { float:left; padding:0 20px 40px 20px; width:600px; }
-article header { padding:10px 0; }
-section {  }
+article {  }
+section { float:left; padding:0 20px 40px 20px; width:600px; }
+section header { padding:10px 0; }
 
 footer { padding:0 20px; }
 footer nav { background:none; height:auto; width:auto; }
