@@ -40,15 +40,16 @@ sup { vertical-align:super; font-size:smaller; }
 select, input, textarea { font:99% arial,helvetica,sans-serif; }
 input, select { vertical-align:middle; }
 button { overflow:visible; width:auto; }
-button, input[type='button'], input[type='submit'], label, select { cursor:pointer; } 
-input[type='text'], input[type='password'], input.input-field { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
+button, input[type='button'], input[type='submit'], input[type='file'] , label, select { cursor:pointer; } 
+
+input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
 input[type="radio"] { vertical-align:text-bottom; }
 input[type="checkbox"] { vertical-align:bottom; *vertical-align:baseline; }
-textarea { border:1px solid #bccccd; display:block; margin-bottom:8px; overflow:auto; }
-select { border:1px solid #bccccd; display:block; margin-bottom:8px; padding:2px; width:200px; }
+textarea { overflow:auto; }
+select { border:1px solid #bccccd; }
 fieldset { margin-bottom:8px; }
-label { font-weight:bold; font-size:13px; display:block; margin:0 0 2px 0; }
-label.radio { display:inline; font-size:13px; padding-left:3px; }
+label { font-weight:bold; font-size:13px; }
+label.radio { font-size:13px; }
 
 ::selection { background:#c01339; color:#fff; }
 ::-moz-selection { background:#c01339; color:#fff; } 
@@ -59,7 +60,7 @@ a:focus, button:focus, input:focus, label:focus, select:focus, textarea:focus { 
 
 /* Hide for both screenreaders and browsers
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-.hidden { display:none; visibility:hidden; } 
+.hidden { display:none; } 
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
 

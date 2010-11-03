@@ -27,3 +27,5 @@
 2010-08-06 CEB - Created the html4 branch and made the master branch start to use HTML5
 
 2010-08-12 CEB - Added some new files and updated the style with a better HTML5 reset
+
+2010-11-03 CEB - Updated the css and version of jQuery to 1.4.3
