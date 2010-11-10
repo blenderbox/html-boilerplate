@@ -43,6 +43,7 @@ button { overflow:visible; width:auto; }
 button, input[type='button'], input[type='submit'], input[type='file'] , label, select { cursor:pointer; } 
 
 input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
+input[type="search"] { -webkit-appearance: textfield; }
 input[type="radio"] { vertical-align:text-bottom; }
 input[type="checkbox"] { vertical-align:bottom; *vertical-align:baseline; }
 textarea { overflow:auto; }
