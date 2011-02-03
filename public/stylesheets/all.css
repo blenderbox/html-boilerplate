@@ -1,7 +1,7 @@
 /* 
 html5doctor.com Reset Stylesheet v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Last Updated:2010-09-17
+Author:Richard Clark - http://richclarkdesign.com 
 */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}nav ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}ins{background-color:#ff9;color:#000;text-decoration:none;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}
 :focus { outline:0; }
@@ -9,7 +9,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 /* HTML */
 html, body { background-color:#cccccc; height:100%; text-align:center; }
 html { overflow:auto; -webkit-font-smoothing:antialiased; }
-body,div,dd,dl,dt,h1,h2,h3,h4,h5,h6,li,ol,span,td,th,ul { color:#444; font:15px arial,verdana,sans-serif; line-height:1.22; }
+body,div,dd,dl,dt,h1,h2,h3,h4,h5,h6,li,ol,span,td,th,ul { color:#444; font:15px arial, verdana, sans-serif; line-height:1.22; }
 a { color:#f47a4d; text-decoration:none; }
 a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#c01339; text-decoration:none; }
 img { border:none; }
@@ -27,12 +27,12 @@ table { padding:10px 0;  width:100%; }
 th { font-weight:bold; }
 td, th { padding:5px; }
 ul, ol { padding:10px 10px 10px 30px; }
-ul li { background:transparent url(../images/bullet.gif) 0 7px no-repeat; line-height:1.22; list-style:none; padding:0 0 8px 10px; }
-ol { font-size:13px; }
+ul li { background:transparent url(../images/bullet.gif) 0 6px no-repeat; line-height:1.22; list-style:none; padding:0 0 8px 10px; }
+ol {  }
 ol li { list-style:decimal; margin:0 0 0 10px; padding:0 0 8px 0; }
 blockquote { color:#76888a; font-size:16px; font-style:italic; line-height:1.22; padding:10px 0; }
 blockquote p { padding:0 }
-hr { border:0 #e2e6e6 solid; border-top-width:2px; clear:both; display:block; height:2px; margin:10px 0; }
+hr { border:0 #e2e6e6 solid; border-top-width:1px; clear:both; display:block; height:1px; margin:10px 0; }
 code, pre { font-family:"Courier New", monospace, serif; font-size:1em; }
 sub { vertical-align:sub; font-size:smaller; }
 sup { vertical-align:super; font-size:smaller; }
@@ -40,10 +40,9 @@ sup { vertical-align:super; font-size:smaller; }
 select, input, textarea { font:99% arial,helvetica,sans-serif; }
 input, select { vertical-align:middle; }
 button { overflow:visible; width:auto; }
-button, input[type='button'], input[type='submit'], input[type='file'] , label, select { cursor:pointer; } 
-
-input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:450px; }
-input[type="search"] { -webkit-appearance: textfield; }
+button, label, select, input[type='button'], input[type='submit'], input[type='file'] { cursor:pointer; } 
+input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:400px; }
+input[type="search"] { -webkit-appearance:textfield; }
 input[type="radio"] { vertical-align:text-bottom; }
 input[type="checkbox"] { vertical-align:bottom; *vertical-align:baseline; }
 textarea { overflow:auto; }
@@ -59,24 +58,20 @@ label.radio { font-size:13px; }
 
 a:focus, button:focus, input:focus, label:focus, select:focus, textarea:focus { outline:1px dotted #c01339; }
 
+/* Put all the transition elements here */
+a { -o-transition-property:color, background-color; -o-transition-duration:.15s; -o-transition-timing-function:ease-in; -moz-transition-property:color, background-color; -moz-transition-duration:.15s; -moz-transition-timing-function:ease-in; -webkit-transition-property:color, background-color; -webkit-transition-duration:.15s; -webkit-transition-timing-function:ease-in; transition-property:color, background-color; transition-duration:.15s; transition-timing-function:ease-in; }
 /* /HTML */
+
 /* CLASSES */
-
-/* Hide for both screenreaders and browsers
-   css-discuss.incutio.com/wiki/Screenreader_Visibility */
 .hidden { display:none; } 
-/* Hide visually and from screenreaders, but maintain layout */
-.invisible { visibility: hidden; }
-
+.invisible { visibility:hidden; }
 .clear, .clear-left, .clear-right { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
-
 .clearfix:after, .clearfix-left:after, .clearfix-right:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
 .clearfix, .clearfix-left:after, .clearfix-right:after { display:inline-block; }
 * html .clearfix, * html .clearfix-left:after, * html .clearfix-right:after { height:1%; } /* Hides from IE-mac \*/
 .clearfix, .clearfix-left:after, .clearfix-right:after { display:block; }
 .clearfix-left:after, .clear-left { clear:left; }
 .clearfix-right:after, .clear-right { clear:right; }
-
 .align-left { text-align:left; }
 .align-center { text-align:center; }
 .align-right { text-align:right; }
@@ -84,18 +79,24 @@ a:focus, button:focus, input:focus, label:focus, select:focus, textarea:focus { 
 .float-right { float:right; }
 .inline { display:inline; }
 .alert, .required { color:#ff0000; }
-.rounded10 {  }
 /* /CLASSES */
+
 /* LAYOUT */
 #container { background:#fff; height:auto !important; height:500px; margin:0 auto; min-height:500px; text-align:left; width:960px; }
 #layout {  }
-header { padding:20px 0 20px 10px; }
+header {  }
+article {  }
+section {  }
+footer {  }
+footer nav {  }
+footer nav li a {  }
+/* /LAYOUT */
 
-/* This an example of navigation using a CSS sprite*/
-nav ul, nav li { background:none; margin:0; padding:0; }
-nav { background:url(../images/backgrounds/nav.png) no-repeat; height:33px; overflow:hidden; }
-nav li { float:left; }
-nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; display:block; height:33px; text-indent:-9999px; }
+/* This an example of navigation using a CSS sprite */
+header nav ul, nav li { background:none; margin:0; padding:0; }
+header nav { background:url(../images/backgrounds/nav.png) no-repeat; height:33px; overflow:hidden; }
+header nav li { float:left; }
+header nav li a { background:url(../images/backgrounds/nav.png) left top no-repeat; display:block; height:33px; text-indent:-9999px; }
 
 nav li#learning a { background-position:0px 0px; width:185px; }
 nav li#assessment a { background-position:-185px 0px; width:172px; }
@@ -108,14 +109,3 @@ nav li#culture a.on { background-position:-357px -66px; }
 nav li#learning a:hover { background-position:0px -33px; }
 nav li#assessment a:hover { background-position:-185px -33px; }
 nav li#culture a:hover { background-position:-357px -33px; }
-
-article {  }
-section { float:left; padding:0 20px 40px 20px; width:600px; }
-section header { padding:10px 0; }
-
-footer { padding:0 20px; }
-footer nav { background:none; height:auto; width:auto; }
-footer nav li a { background:none; text-indent:0px; }
-/* /LAYOUT */
-
-

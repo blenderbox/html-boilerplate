@@ -4,12 +4,11 @@ var APP = (function($) {
         $.ajaxSetup({
             cache: false,
             error: function(x, e) {
-                if (console) {
-                    console.log(x, e);
-                }
+                if (console) { console.log(x, e); }
             },
             type: "POST"
         });
+		if(!Modernizr.csstransitions) { $.getScript('javascripts/css3.js'); }
     };
     return app;
 } (jQuery));
