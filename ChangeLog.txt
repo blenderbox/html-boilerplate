@@ -29,3 +29,5 @@
 2010-08-12 CEB - Added some new files and updated the style with a better HTML5 reset
 
 2010-11-03 CEB - Updated the css and version of jQuery to 1.4.3
+
+2011-02-03 CEB - Cleaned up the CSS and updated jQuery to 1.5
