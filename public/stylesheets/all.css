@@ -12,7 +12,7 @@ html { overflow:auto; -webkit-font-smoothing:antialiased; }
 body,div,dd,dl,dt,h1,h2,h3,h4,h5,h6,li,ol,span,td,th,ul { color:#444; font:15px arial, verdana, sans-serif; line-height:1.22; }
 a { color:#f47a4d; text-decoration:none; }
 a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color:#c01339; text-decoration:none; }
-img { border:none; }
+img { border:none; vertical-align:bottom; }
 p { padding:10px 0; }
 strong, b { font-weight:bold; }
 em, i { font-style:italic; }
