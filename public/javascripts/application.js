@@ -8,11 +8,9 @@ var APP = (function($) {
             },
             type: "POST"
         });
-		if(!Modernizr.csstransitions) { $.getScript('javascripts/css3.js'); }
+        if(!Modernizr.csstransitions) { $.getScript('javascripts/css3.js'); }
     };
+    // Call the init function on load
+    $(app.init);
     return app;
 } (jQuery));
-
-$(function() {
-    APP.init();
-});
