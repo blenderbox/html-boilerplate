@@ -9,8 +9,10 @@ var APP = (function($) {
             },
             type: "POST"
         });
-        // See if we have css3 transitions, otherwise add a shim for it.
-        if(!Modernizr.csstransitions) { $.getScript('javascripts/css3.js'); }
+		// The following is an example of using Modernizer to detect browser capabilities.
+		// You can remove it.
+        // See if we have CSS3 transitions, otherwise add a shim for it.
+        if (!Modernizr.csstransitions) { $.getScript('javascripts/behaviors/css3.js'); }
     };
     // Private functions
     function foo() {
