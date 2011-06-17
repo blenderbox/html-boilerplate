@@ -33,3 +33,5 @@
 2011-02-03 CEB - Cleaned up the CSS and updated jQuery to 1.5
 
 2011-04-15 CEB - Moved from any camel case to all lower case.  Added more tips and described the javascript in the package
+
+2011-06-17 CEB - re-arranged the javascript libraries.
