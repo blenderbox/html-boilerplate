@@ -13,16 +13,9 @@ var APP = (function($) {
     var app = {};
     // Public functions
     app.init = function() {
-        $.ajaxSetup({
-            cache: false,
-            error: function(x, e) {
-                if (console) { console.log(x, e); }
-            },
-            type: "POST"
-        });
-		// The following is an example of using Modernizer to detect browser capabilities.
-		// You can remove it.
-        // See if we have CSS3 transitions, otherwise add a shim for it.
+        $('a[href=#]').attr('href', 'javascript:;');
+        // Set up the global ajax
+        $.ajaxSetup({ cache: false, error: function errorLog(x, e) { log(x, e); }, type: 'POST' });
         if (!Modernizr.csstransitions) { $.getScript('javascripts/behaviors/css3.js'); }
     };
     // Private functions
