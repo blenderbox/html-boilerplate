@@ -35,3 +35,5 @@
 2011-04-15 CEB - Moved from any camel case to all lower case.  Added more tips and described the javascript in the package
 
 2011-06-17 CEB - re-arranged the javascript libraries.
+
+2011-06-30 CEB - removed ie css files in favor of conditional html tags.
