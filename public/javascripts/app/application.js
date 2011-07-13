@@ -10,17 +10,28 @@ window.log = function(){
 (function(b){function c(){}for(var d="assert,count,debug,dir,dirxml,error,exception,group,groupCollapsed,groupEnd,info,log,markTimeline,profile,profileEnd,time,timeEnd,trace,warn".split(","),a;a=d.pop();)b[a]=b[a]||c})(window.console=window.console||{});
 
 var APP = (function($) {
-    var app = {};
+    var app = {}, $el;
     // Public functions
     app.init = function() {
         $('a[href=#]').attr('href', 'javascript:;');
         // Set up the global ajax
         $.ajaxSetup({ cache: false, error: function errorLog(x, e) { log(x, e); }, type: 'POST' });
         if (!Modernizr.csstransitions) { $.getScript('javascripts/behaviors/css3.js'); }
+        if (!Modernizr.input.placeholder) { placeholder(); }
     };
     // Private functions
-    function foo() {
-        
+    function placeholder() {
+        var d;
+        $('input[placeholder!=""]').each(function(idx, el){
+            $el = $(el);
+            d = $el.attr('placeholder');
+            $el.focus(function onFocus() { 
+                if (this.value === d) { this.value = ''; }
+            }).blur(function onBlur() { 
+                if ($.trim(this.value) === '') { this.value = d; }
+            });
+            $el.blur();
+        });
     }
     // Call the init function on load
     $(app.init);
