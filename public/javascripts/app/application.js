@@ -16,7 +16,7 @@ var APP = (function($) {
         $('a[href=#]').attr('href', 'javascript:;');
         // Set up the global ajax
         $.ajaxSetup({ cache: false, error: function errorLog(x, e) { log(x, e); }, type: 'POST' });
-        if (!Modernizr.csstransitions) { $.getScript('javascripts/behaviors/css3.js'); }
+        if (!Modernizr.csstransitions) { $.getScript('javascripts/app/css3.js'); }
         if (!Modernizr.input.placeholder) { placeholder(); }
     };
     // Private functions
