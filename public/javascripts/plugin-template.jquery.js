@@ -5,11 +5,11 @@
         // plugin's default options
         var defaults = {
             foo: 'bar'
-        }
+        };
         // this will hold the merged default and user-provided properties
         // you will have to access the plugin's properties through this object!
         // settings.propertyName
-        var settings = {}
+        var settings = {};
         // public methods
         // to keep the $.fn namespace uncluttered, collect all of the plugin's methods in an object literal and call
         // them by passing the string name of the method to the plugin
@@ -28,12 +28,12 @@
                 // the plugin's final properties are the merged default and user-provided properties (if any)
                 // this has the advantage of not polluting the defaults, making the same instace re-usable with
                 // new options; thanks to Steven Black for suggesting this
-                settings = $.extend({}, defaults, options)
+                settings = $.extend({}, defaults, options);
                 // iterate through all the DOM elements we are attaching the plugin to
                 return this.each(function() {
-                    // "element" holds the jQuery version of the current DOM element
+                    // "$el" holds the jQuery version of the current DOM element
                     // "this" refers to the actual DOM element
-                    var element = $(this);
+                    var $el = $(this);
                     // code goes here
                 });
             },
@@ -42,7 +42,7 @@
                 // code goes here
             }
 
-        }
+        };
         // private methods
         // these methods can be called only from within the plugin
         //
@@ -55,7 +55,7 @@
             foo_private_method: function() {
                 // code goes here
             }
-        }
+        };
         // if a method as the given argument exists
         if (methods[method]) {
             // call the respective method
@@ -69,5 +69,5 @@
             // trigger an error
             $.error( 'Method "' +  method + '" does not exist in pluginName plugin!');
         }
-    }
+    };
 })(jQuery);
