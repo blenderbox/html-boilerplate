@@ -9,37 +9,27 @@ Call the plugin with $('jquery-selector').plugin({ foo:'custom-setting' });
 */
 
 (function($) {
-  var Plugin = function(el, opts) {
+    var PluginName = function(el, opts) {
+        //Defaults are below
+        var settings = $.extend({}, $.fn.pluginname.defaults, opts);
 
-    //Defaults are below
-    var settings = $.extend({}, $.fn.plugin.defaults, opts);
+        // private methods
+        function init() {
 
-    // public methods
-    this.foo = function() {
-        
+        }
+        init();
     };
-    // private methods
-    function init() {
-        
-    }
-    // call the init function
-    init();
-
-    // initialize the plugin using the jQuery plugin syntax
-    $.fn.plugin = function(opts) {
+    $.fn.pluginname = function(options) {
         return this.each(function(idx, el) {
-            var $el = $(this), key = 'plugin';
+            var $el = $(this), key = 'pluginname';
             // Return early if this element already has a plugin instance
             if ($el.data(key)) { return; }
             // Pass options to plugin constructor
-            var plugin = new Plugin(this, opts);
+            var pluginname = new PluginName(this, options);
             // Store plugin object in this element's data
-            $el.data(key, plugin);
+            $el.data(key, pluginname);
         });
     };
     // default settings
-    $.fn.plugin.defaults = {
-        foo:0
-    };
-  };
+    $.fn.pluginname.defaults = {  };
 })(jQuery);
