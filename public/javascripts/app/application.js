@@ -21,8 +21,8 @@ var APP = (function($) {
     };
     // Private functions
     function placeholder() {
-        var d;
         $('input[placeholder!=""]').each(function(idx, el){
+            var d;
             $el = $(el);
             d = $el.attr('placeholder');
             $el.focus(function onFocus() { 
