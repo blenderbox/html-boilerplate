@@ -5,7 +5,7 @@ Author:Richard Clark - http://richclarkdesign.com
 */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}nav ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}ins{background-color:#ff9;color:#000;text-decoration:none;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}
 :focus { outline:0; }
-/* /RESET */
+
 /* HTML */
 html, body { background:#ccc; height:100%; text-align:center; }
 html { overflow:auto; -webkit-font-smoothing:antialiased; }
@@ -37,7 +37,7 @@ code, pre { font-family:"Courier New", monospace, serif; font-size:1em; }
 sub { vertical-align:sub; font-size:smaller; }
 sup { vertical-align:super; font-size:smaller; }
 /* inputs/form fields */
-select, input, textarea { font:99% arial,helvetica,sans-serif; }
+select, input, textarea { font:99% arial, sans-serif; }
 input, select { vertical-align:middle; }
 button { overflow:visible; width:auto; }
 button, label, select, input[type='button'], input[type='submit'], input[type='file'] { cursor:pointer; } 
@@ -60,7 +60,6 @@ a:focus, button:focus, input:focus, label:focus, select:focus, textarea:focus { 
 
 /* Put all the transition elements here */
 a { -o-transition-property:color, background-color; -o-transition-duration:.15s; -o-transition-timing-function:ease-in; -moz-transition-property:color, background-color; -moz-transition-duration:.15s; -moz-transition-timing-function:ease-in; -webkit-transition-property:color, background-color; -webkit-transition-duration:.15s; -webkit-transition-timing-function:ease-in; transition-property:color, background-color; transition-duration:.15s; transition-timing-function:ease-in; }
-/* /HTML */
 
 /* CLASSES */
 .hidden { display:none; } 
@@ -79,7 +78,6 @@ a { -o-transition-property:color, background-color; -o-transition-duration:.15s;
 .float-right { float:right; }
 .inline { display:inline; }
 .alert, .required { color:#ff0000; }
-/* /CLASSES */
 
 /* LAYOUT */
 #container { background:#fff; height:auto !important; height:500px; margin:0 auto; min-height:500px; text-align:left; width:960px; }
@@ -88,11 +86,8 @@ header {  }
 article {  }
 section {  }
 footer {  }
-footer nav {  }
-footer nav li a {  }
-/* /LAYOUT */
 
-/* This an example of navigation using a CSS sprite */
+/* This an example of navigation using a CSS sprite - Delete it */
 header nav ul, nav li { background:none; margin:0; padding:0; }
 header nav { background:url(../images/backgrounds/nav.png) no-repeat; height:33px; overflow:hidden; }
 header nav li { float:left; }
