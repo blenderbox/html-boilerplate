@@ -40,6 +40,7 @@ sup { vertical-align:super; font-size:smaller; }
 select, input, textarea { font:99% arial, sans-serif; }
 input, select { vertical-align:middle; }
 button { overflow:visible; width:auto; }
+button:active, .button:active { position:relative; top:1px; }
 button, label, select, input[type='button'], input[type='submit'], input[type='file'] { cursor:pointer; } 
 input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:400px; }
 input[type="search"] { -webkit-appearance:textfield; }
