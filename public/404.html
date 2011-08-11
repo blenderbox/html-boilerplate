@@ -13,8 +13,6 @@
     <link href="apple-touch-icon.png" rel="apple-touch-icon" />
     <script src="javascripts/libs/modernizr.min.js"></script>
     <link href="stylesheets/all.css" rel="stylesheet" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" />
-    <link href="stylesheets/handheld.css?v=1" media="handheld" rel="stylesheet" />
 </head>
 <body>
     <div id="container">
@@ -27,6 +25,11 @@
               <li>Open the home page and look for the links to the information you want.</li> 
               <li>Click the "Back" button to try another link.</li> 
             </ul>
+            <script> 
+                var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),
+                GOOG_FIXURL_SITE = location.host;
+            </script> 
+            <script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
             <footer>
                 &copy;<script>var cur=new Date();var yr=cur.getFullYear();document.write(yr);</script>
             </footer>
@@ -34,7 +37,6 @@
     </div><!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>!window.jQuery && document.write('<script src="javascripts/libs/jquery-1.6.2.min.js"><\/script>')</script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
     <!--[if lt IE 7 ]>
     <script src="javascripts/libs/dd_belatedpng.js"></script>
     <script>
