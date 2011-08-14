@@ -3,9 +3,6 @@ var CSS = (function($) {
     app.init = function() {
         // Create css3 transitions here.
     };
+    $(app.init);
     return app;
 } (jQuery));
-
-$(function() {
-    CSS.init();
-});
