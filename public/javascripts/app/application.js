@@ -22,12 +22,12 @@ var APP = (function($) {
     // Private functions
     function placeholder() {
         $('input[placeholder!=""]').each(function(idx, el){
-            var d;
             $el = $(el);
-            d = $el.attr('placeholder');
-            $el.focus(function onFocus() { 
+            var d = $el.attr('placeholder');
+            if (d===undefined) { return; }
+            $el.focus(function onFocus() {
                 if (this.value === d) { this.value = ''; }
-            }).blur(function onBlur() { 
+            }).blur(function onBlur() {
                 if ($.trim(this.value) === '') { this.value = d; }
             });
             $el.blur();
