@@ -103,6 +103,7 @@ a { -o-transition-property:color, background-color; -o-transition-duration:.15s;
 .clearfix:before, .clearfix:after { content:""; display:table; }
 .clearfix:after { clear:both; }
 .clearfix { zoom:1; }
+.clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
 .alert { color:#ff0000; }
 
 /* LAYOUT */
