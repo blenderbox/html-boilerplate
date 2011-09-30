@@ -72,7 +72,11 @@ input[type="checkbox"], input[type="radio"] { box-sizing:border-box; }
 input[type="search"] { -webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; }
 input[type="search"]::-webkit-search-decoration { -webkit-appearance:none; }
 button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
-input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:400px; }
+input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:400px;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+        box-sizing:border-box;
+}
 textarea { overflow:auto; vertical-align:top; resize:vertical; }
 /* Colors for form validity */
 input:valid, textarea:valid {  }
