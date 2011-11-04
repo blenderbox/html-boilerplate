@@ -102,7 +102,7 @@ a { -o-transition-property:color, background-color; -o-transition-duration:.15s;
 .ir { background-color:transparent; background-repeat:no-repeat; border:0; direction:ltr; display:block; overflow:hidden; text-align:left; text-indent:-999em; }
 .ir br { display:none; }
 
-.hidden { display:none !important; visibility:hidden; }
+.hide { display:none !important; visibility:hidden; }
 .invisible { visibility:hidden; }
 .clearfix:before, .clearfix:after { content:""; display:table; }
 .clearfix:after { clear:both; }
