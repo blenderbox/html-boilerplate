@@ -5,7 +5,7 @@ audio:not([controls]) { display:none; }
 [hidden] { display:none; }
 /* Base */
 html { font-size:100%; overflow-y:auto; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
-body {font-size:13px; line-height:1.231; margin:0; }
+body { background:#fff; margin:0; }
 body, button, input, select, textarea { color:#444; font:15px arial, verdana, sans-serif; line-height:1.22; }
 /* Links */
 a { color:#f47a4d; text-decoration:none; }
@@ -33,7 +33,7 @@ small { font-size:85%; }
 sub, sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
 sup { top:-0.5em; }
 sub { bottom:-0.25em; }
-h1, h2, h3, h4, h5, h6 { color:#000; font-weight:bold; padding:10px 0; text-rendering:optimizeLegibility; }
+h1, h2, h3, h4, h5, h6 { color:#000; font-weight:bold; margin:0; padding:10px 0; text-rendering:optimizeLegibility; }
 h1, h1 a { font-size:26px; padding-top:0; }
 h2, h2 a { font-size:24px; }
 h3, h3 a { font-size:22px; }
@@ -72,7 +72,7 @@ input[type="checkbox"], input[type="radio"] { box-sizing:border-box; }
 input[type="search"] { -webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; }
 input[type="search"]::-webkit-search-decoration { -webkit-appearance:none; }
 button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
-input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; margin-bottom:8px; padding:2px; width:400px;
+input[type='text'], input[type='email'], input[type='password'], input[type='url'], input.input-field, textarea { border:1px solid #bccccd; padding:2px;
 -webkit-box-sizing:border-box;
    -moz-box-sizing:border-box;
         box-sizing:border-box;
@@ -99,7 +99,7 @@ a { -o-transition-property:color, background-color; -o-transition-duration:.15s;
 
 /* CLASSES */
 /* For image replacement */
-.ir { display:block; border:0; text-indent:-999em; overflow:hidden; background-color:transparent; background-repeat:no-repeat; text-align:left; direction:ltr; }
+.ir { background-color:transparent; background-repeat:no-repeat; border:0; direction:ltr; display:block; overflow:hidden; text-align:left; text-indent:-999em; }
 .ir br { display:none; }
 
 .hidden { display:none !important; visibility:hidden; }
