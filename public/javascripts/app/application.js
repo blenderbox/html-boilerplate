@@ -16,15 +16,19 @@ var APP = (function($) {
         $('a[href=#]').attr('href', 'javascript:;');
         // Set up the global ajax
         $.ajaxSetup({ cache: false, error: function errorLog(x, e) { log(x, e); }, type: 'POST' });
-        if (!Modernizr.csstransitions) { $.getScript('javascripts/app/css3.js'); }
         if (!Modernizr.input.placeholder) { placeholder(); }
+        yepnope([{
+            test:Modernizr.csstransitions,
+            nope:'javascripts/app/css3.js'
+        }]);
     };
     // Private functions
     function placeholder() {
-        $('input[placeholder!=""]').each(function(idx, el){
+        var attr = 'placeholder';
+        $('input[' + attr + '!=""]').each(function(idx, el){
             $el = $(el);
-            var d = $el.attr('placeholder');
-            if (d===undefined) { return; }
+            var d = $el.attr(attr);
+            if (d === undefined) { return; }
             $el.focus(function onFocus() {
                 if (this.value === d) { this.value = ''; }
             }).blur(function onBlur() {
