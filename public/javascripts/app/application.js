@@ -12,7 +12,9 @@ window.log = function(){
 var APP = (function($) {
     var app = {}, $el;
     // Public functions
-    app.init = function() {
+    // app.foo = function() {  };
+    // Private functions
+    function init() {
         $('a[href=#]').attr('href', 'javascript:;');
         // Set up the global ajax
         $.ajaxSetup({ cache: false, error: function errorLog(x, e) { log(x, e); }, type: 'POST' });
@@ -21,8 +23,7 @@ var APP = (function($) {
             test:Modernizr.csstransitions,
             nope:'javascripts/app/css3.js'
         }]);
-    };
-    // Private functions
+    }
     function placeholder() {
         var attr = 'placeholder';
         $('input[' + attr + '!=""]').each(function(idx, el){
@@ -38,6 +39,6 @@ var APP = (function($) {
         });
     }
     // Call the init function on load
-    $(app.init);
+    $(init);
     return app;
 } (jQuery));
