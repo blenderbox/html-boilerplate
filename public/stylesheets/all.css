@@ -164,14 +164,26 @@ nav li#culture a:hover { background-position:-357px -33px; }
 
 
 
-@media only screen and (min-width:480px) {
-  /* media-query */
+
+@media (max-width: 480px) {
+  
+}
+@media (max-width: 768px) {
+  
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  
+}
+@media (max-width: 980px) {
+  body { padding-top: 0; }
+}
+@media (min-width: 980px) {
+  
+}
+@media (min-width: 1200px) {
+  
 }
 
-@media only screen and (min-width:768px) {
-  /* media-query */
-}
- 
 @media print {
   * { background:transparent !important; color:black !important; box-shadow:none !important; text-shadow:none !important; filter:none !important; -ms-filter:none !important; } 
   a, a:visited { text-decoration:underline; }
