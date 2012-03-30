@@ -1,8 +1,8 @@
 var CSS = (function($) {
     var app = {};
-    app.init = function() {
+    function init() {
         // Create css3 transitions here.
-    };
-    $(app.init);
+    }
+    $(init);
     return app;
 } (jQuery));
