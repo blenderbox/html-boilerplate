@@ -5,7 +5,7 @@ This is a simple template for a jquery plugin.
 Replace all instances of 'pluginname;' with your plugin name lowercased
 Replace all instances of 'PluginName;' with your plugin name camelcased.
 
-Call the plugin with $('jquery-selector').plugin({ foo:'custom-setting' });
+Call the plugin with $('jquery-selector').pluginname({ foo:'custom-setting' });
 */
 
 (function($) {
