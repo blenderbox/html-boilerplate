@@ -90,6 +90,7 @@ td { vertical-align:top; }
 ::selection { background:#c01339; color:#fff; text-shadow:none; }
 ::-webkit-input-placeholder { color:#282218; }
 ::-moz-placeholder { color:#282218; }
+input.placeholder { color:#282218; }
 
 a:focus, button:focus, input:focus, label:focus, select:focus, textarea:focus { outline:1px dotted #c01339; }
 
@@ -172,7 +173,7 @@ nav li#culture a:hover { background-position:-357px -33px; }
   
 }
 @media (max-width: 980px) {
-  body { padding-top: 0; }
+  
 }
 @media (min-width: 980px) {
   

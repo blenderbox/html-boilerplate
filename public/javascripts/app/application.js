@@ -5,10 +5,11 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
 (function(){try{console.log();return window.console;}catch(a){return (window.console={});}}());
 
 var APP = (function($) {
-    var app = {}, $el;
-    // Public functions
+    var app = {},
+        $el;
+    // public functions
     // app.foo = function() {  };
-    // Private functions
+    // private functions
     function init() {
         $('a[href=#]').attr('href', 'javascript:;');
         // Open links starting with "http(s)://" in a new window unless they're targeted at this host.
@@ -37,8 +38,10 @@ var APP = (function($) {
             var d = $el.attr(attr);
             if (d === undefined) { return; }
             $el.focus(function onFocus() {
+                $el.removeClass(attr);
                 if (this.value === d) { this.value = ''; }
             }).blur(function onBlur() {
+                $el.addClass(attr);
                 if ($.trim(this.value) === '') { this.value = d; }
             });
             $el.blur();
