@@ -3,6 +3,11 @@
 
 
 /* TEAM */
+  Agency: Blenderbox
+  Site: http://www.blenderbox.com
+  Twitter: @blenderbox
+  Location: Brooklyn, NY
+
   <your title>: <your name>
   Site: 
   Twitter: 

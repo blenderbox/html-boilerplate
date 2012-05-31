@@ -2,11 +2,11 @@
 // requestAnimationFrame() shim by Paul Irish
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
 window.requestAnimFrame = (function() {
-    return  window.requestAnimationFrame   || 
-            window.webkitRequestAnimationFrame || 
-            window.mozRequestAnimationFrame    || 
-            window.oRequestAnimationFrame      || 
-            window.msRequestAnimationFrame     || 
+    return  window.requestAnimationFrame   ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            window.oRequestAnimationFrame      ||
+            window.msRequestAnimationFrame     ||
             function(/* function */ callback, /* DOMElement */ element){
                 window.setTimeout(callback, 1000 / 60);
             };
@@ -29,7 +29,7 @@ window.requestInterval = function(fn, delay) {
           handle = {};
       function loop() {
             var current = new Date().getTime(), delta = current - start;
-            if (delta >= delay) { 
+            if (delta >= delay) {
                 fn.call();
                 start = new Date().getTime();
             }
@@ -58,10 +58,10 @@ window.clearRequestInterval = function(handle) {
  * @param {int} delay The delay in milliseconds
  */
 window.requestTimeout = function(fn, delay) {
-    if( !window.requestAnimationFrame && 
-        !window.webkitRequestAnimationFrame && 
-        !window.mozRequestAnimationFrame && 
-        !window.oRequestAnimationFrame && 
+    if( !window.requestAnimationFrame &&
+        !window.webkitRequestAnimationFrame &&
+        !window.mozRequestAnimationFrame &&
+        !window.oRequestAnimationFrame &&
         !window.msRequestAnimationFrame)
             return window.setTimeout(fn, delay);
 
