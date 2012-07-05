@@ -8,7 +8,7 @@ window.requestAnimFrame = (function() {
             window.oRequestAnimationFrame ||
             window.msRequestAnimationFrame ||
             function(callback, element){
-                window.setTimeout(callback, 1000 / 60);
+                window.setTimeout(callback, 16.667);
             };
 })();
 
@@ -29,7 +29,9 @@ window.requestInterval = function(fn, delay) {
         handle = {};
 
     function loop() {
-        var current = new Date().getTime(), delta = current - start;
+        var current = new Date().getTime(),
+            delta = current - start;
+
         if (delta >= delay) {
             fn.call();
             start = new Date().getTime();
@@ -37,7 +39,7 @@ window.requestInterval = function(fn, delay) {
         handle.value = requestAnimFrame(loop);
     }
     handle.value = requestAnimFrame(loop);
-    return   handle;
+    return handle;
 };
 
 /**
