@@ -46,7 +46,7 @@ h6, h6 a { font-size:14px; }
 /* Lists */
 dd { margin:0 0 0 40px; }
 ul, ol { padding:10px 10px 10px 30px; }
-ul li { background:transparent url(../images/bullet.gif) 0 6px no-repeat; list-style:none; padding:0 0 8px 10px; }
+ul li { background:transparent url(../images/bullet.png) 0 6px no-repeat; list-style:none; padding:0 0 8px 10px; }
 ol {  }
 ol li { list-style:decimal; margin:0 0 0 10px; padding:0 0 8px 0; }
 nav ul, nav ol, nav li { background:none; margin:0; padding:0; }
