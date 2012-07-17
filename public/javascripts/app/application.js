@@ -17,10 +17,12 @@ var APP = (function($) {
         // Set up the global ajax
         $.ajaxSetup({ cache: false, error: function errorLog(x, e) { log(x, e); }, type: 'POST' });
         if (!Modernizr.input.placeholder) { placeholder(); }
+        /*
         yepnope([{
             test:Modernizr.csstransitions,
-            nope:'javascripts/app/css3.js'
+            nope:'/javascripts/app/css3.js'
         }]);
+        */
     }
     function open(e) {
         e.preventDefault();
