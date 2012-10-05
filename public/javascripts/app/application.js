@@ -39,14 +39,17 @@ var APP = (function($) {
             $el = $(el);
             var d = $el.attr(attr);
             if (d === undefined) { return; }
-            $el.focus(function onFocus() {
-                $(this).removeClass(attr);
-                if (this.value === d) { this.value = ''; }
-            }).blur(function onBlur() {
-                $(this).addClass(attr);
-                if ($.trim(this.value) === '') { this.value = d; }
-            });
-            $el.blur();
+            $el
+                .focus(function onFocus() {
+                    $(this).removeClass(attr);
+                    if (this.value === d) { this.value = ''; }
+                })
+                .blur(function onBlur() {
+                    if ($.trim(this.value) === '') {
+                        $(this).addClass(attr);
+                        this.value = d;
+                    }
+                }).blur();
         });
     }
     // Call the init function on load
