@@ -40,10 +40,10 @@ var APP = (function($) {
             var d = $el.attr(attr);
             if (d === undefined) { return; }
             $el.focus(function onFocus() {
-                $el.removeClass(attr);
+                $(this).removeClass(attr);
                 if (this.value === d) { this.value = ''; }
             }).blur(function onBlur() {
-                $el.addClass(attr);
+                $(this).addClass(attr);
                 if ($.trim(this.value) === '') { this.value = d; }
             });
             $el.blur();
