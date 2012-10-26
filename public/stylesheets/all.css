@@ -15,7 +15,7 @@ audio:not([controls]) { display:none; }
 [hidden] { display:none; }
 
 /* Base */
-html { font-size:100%; overflow-y:auto; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+html { font-size:100%; overflow-y:auto; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; }
 body { background:#fff; margin:0; }
 body, button, input, select, textarea { color:#444; font:15px sans-serif; }
 
@@ -37,12 +37,14 @@ hr { border:0 #e2e6e6 solid; border-top-width:1px; clear:both; display:block; he
 ins { background:#ff9; color:#000; text-decoration:none; }
 mark { background:#ff0; color:#000; font-style:italic; font-weight:bold; }
 
-h1, h2, h3, h4, h5, h6 { font-weight:bold; margin:10px 0; padding:0; text-rendering:optimizeLegibility; }
-h1, h1 a { font-size:26px; margin-top:0; }
-h2, h2 a { font-size:24px; }
-h3, h3 a { font-size:22px; }
-h4, h4 a { font-size:18px; }
-h5, h5 a { font-size:16px; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight:bold; margin:10px 0; padding:0; text-rendering:optimizeLegibility;
+}
+h1, h1 a { font-size:34px; margin-top:0; }
+h2, h2 a { font-size:30px; }
+h3, h3 a { font-size:26px; }
+h4, h4 a { font-size:22px; }
+h5, h5 a { font-size:18px; }
 h6, h6 a { font-size:14px; }
 
 /* Redeclare monospace font family:h5bp.com/j */
@@ -80,24 +82,30 @@ fieldset { border:0; margin:0; padding:0; }
 
 /* Indicate that 'label' will shift focus to the associated form element */
 label { cursor:pointer; font-weight:bold; }
+
 legend { border:0; *margin-left:-7px; padding:0; }
+
 button,
 input,
 select,
 textarea { font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle; }
+
 button,
 input { line-height:normal; *overflow:visible; }
+
 button:active,
 .button:active { position:relative; top:1px; }
 
 /* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
 table button, table input { *overflow:auto; }
+
 button,
 select,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
 input[type='file'] { cursor:pointer; }
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -105,10 +113,12 @@ input[type="submit"] { -webkit-appearance:button; }
 
 /* Consistent box sizing and appearance  */
 input[type="checkbox"],
-input[type="radio"] { box-sizing:border-box; padding:0; *width:13px; *height:13px; }
+input[type="radio"] { padding:0; *height:13px; *width:13px; }
 input[type="search"] { -webkit-appearance:textfield; }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button { -webkit-appearance:none; }
+
 button::-moz-focus-inner,
 input::-moz-focus-inner { border:0; padding:0; }
 
@@ -149,17 +159,27 @@ button:focus,
 input:focus,
 label:focus,
 select:focus,
-textarea:focus { outline:1px dotted #c01339; }
+textarea:focus { outline:1px dashed #c01339; }
 
 /* Transition elements */
 a,
 button,
 .button {
-   -moz-transition:color, background-color .15s ease-in;
-    -ms-transition:color, background-color .15s ease-in;
-     -o-transition:color, background-color .15s ease-in;
--webkit-transition:color, background-color .15s ease-in;
-        transition:color, background-color .15s ease-in;
+     -o-transition-duration:.15s;
+   -moz-transition-duration:.15s;
+    -ms-transition-duration:.15s;
+-webkit-transition-duration:.15s;
+        transition-duration:.15s;
+     -o-transition-timing-function:ease-in;
+   -moz-transition-timing-function:ease-in;
+    -ms-transition-timing-function:ease-in;
+-webkit-transition-timing-function:ease-in;
+        transition-timing-function:ease-in;
+     -o-transition-property:background-color, border-color, color, opacity;
+   -moz-transition-property:background-color, border-color, color, opacity;
+    -ms-transition-property:background-color, border-color, color, opacity;
+-webkit-transition-property:background-color, border-color, color, opacity;
+        transition-property:background-color, border-color, color, opacity;
 }
 
 /* CLASSES */
@@ -213,7 +233,11 @@ footer { clear:both; height:150px; margin-top:-150px; position:relative; }
 }
 
 @media print {
-  * { background:transparent !important; color:black !important; box-shadow:none !important; text-shadow:none !important; filter:none !important; -ms-filter:none !important; } 
+  * {
+    background:transparent !important; color:black !important;
+    box-shadow:none !important; text-shadow:none !important;
+    filter:none !important; -ms-filter:none !important;
+  } 
   a, a:visited { text-decoration:underline; }
   a[href]:after { content:" (" attr(href) ")"; }
   abbr[title]:after { content:" (" attr(title) ")"; }
