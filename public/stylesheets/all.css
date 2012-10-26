@@ -205,13 +205,13 @@ footer {  }
 
 /*
   Sticky Footer
-  $footer-height:150px
+  $footer-height: 150px
 */
 html, body, #wrap { height:100%; }
 body > #wrap { height:auto; min-height:100%; }
 #layout { padding-bottom:150px; }  /* must be same height as the footer */
 footer { clear:both; height:150px; margin-top:-150px; position:relative; } 
-
+.lt-ie9 #layout { min-height:auto; }
 
 
 
