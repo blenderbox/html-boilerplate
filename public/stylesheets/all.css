@@ -21,14 +21,13 @@ body, button, input, select, textarea { color:#444; font:15px sans-serif; }
 
 /* Links */
 a { color:#f47a4d; text-decoration:none; }
-a:visited { color:#551a8b; }
+a:visited {  }
 a:hover { color:#c01339; text-decoration:none; }
 a:focus { outline:thin dotted; }
 a:hover, a:active { outline:0; }
 
-p { margin:10px 0; padding:0; }
-
 /* Typography */
+p { margin:10px 0; padding:0; }
 abbr[title] { border-bottom:1px dotted; }
 b, strong { font-weight:bold; }
 blockquote { color:#76888a; font-size:16px; font-style:italic; margin:1em 40px; padding:10px 0; }
@@ -82,9 +81,14 @@ fieldset { border:0; margin:0; padding:0; }
 /* Indicate that 'label' will shift focus to the associated form element */
 label { cursor:pointer; font-weight:bold; }
 legend { border:0; *margin-left:-7px; padding:0; }
-button, input, select, textarea { font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle; }
-button, input { line-height:normal; *overflow:visible; }
-button:active, .button:active { position:relative; top:1px; }
+button,
+input,
+select,
+textarea { font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle; }
+button,
+input { line-height:normal; *overflow:visible; }
+button:active,
+.button:active { position:relative; top:1px; }
 
 /* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
 table button, table input { *overflow:auto; }
@@ -103,8 +107,10 @@ input[type="submit"] { -webkit-appearance:button; }
 input[type="checkbox"],
 input[type="radio"] { box-sizing:border-box; padding:0; *width:13px; *height:13px; }
 input[type="search"] { -webkit-appearance:textfield; }
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance:none; }
-button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button { -webkit-appearance:none; }
+button::-moz-focus-inner,
+input::-moz-focus-inner { border:0; padding:0; }
 
 /* reset weird iOS styles */
 input[type="text"],
@@ -124,18 +130,20 @@ textarea { overflow:auto; vertical-align:top; resize:vertical; }
 input:valid, textarea:valid {  }
 input:invalid, textarea:invalid {  }
 
-/*Tables*/
+/* Tables */
 table { border-collapse:collapse; border-spacing:0; padding:10px 0; }
 td, th { padding:5px; }
 th { font-weight:bold; }
 td { vertical-align:top; }
 
+/* Fun things */
 ::-moz-selection { background:#c01339; color:#fff; text-shadow:none; }
 ::selection { background:#c01339; color:#fff; text-shadow:none; }
 ::-webkit-input-placeholder { color:#6e6d6b; }
 ::-moz-placeholder { color:#6e6d6b; }
 input.placeholder { color:#6e6d6b; }
 
+/* Focus */
 a:focus,
 button:focus,
 input:focus,
@@ -143,8 +151,10 @@ label:focus,
 select:focus,
 textarea:focus { outline:1px dotted #c01339; }
 
-/* Put all the transition elements here */
-a {
+/* Transition elements */
+a,
+button,
+.button {
    -moz-transition:color, background-color .15s ease-in;
     -ms-transition:color, background-color .15s ease-in;
      -o-transition:color, background-color .15s ease-in;
@@ -173,7 +183,6 @@ section {  }
 aside {  }
 footer {  }
 
-
 /*
   Sticky Footer
   $footer-height:150px
@@ -189,27 +198,18 @@ footer { clear:both; height:150px; margin-top:-150px; position:relative; }
 
 
 
+/* Responsiveness */
+@media (max-width: 768px) { }
+@media (min-width: 768px) and (max-width: 980px) { }
 
+/* iPhone / touch */
+@media (max-width:480px) and (orientation:portrait) { }
+@media (max-width:480px) and (orientation:landscape) { }
 
-
-
-@media (max-width:480px) {
-  
-}
-@media (max-width:768px) {
-  
-}
-@media (min-width:768px) and (max-width:980px) {
-  
-}
-@media (max-width:980px) {
-  
-}
-@media (min-width:980px) {
-  
-}
-@media (min-width:1200px) {
-  
+/* Nexus S, iOS Devices, etc. */
+@media screen and (max-width:533px),
+       all and (max-device-width: 480px) and (orientation: landscape),
+       all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }
 
 @media print {
