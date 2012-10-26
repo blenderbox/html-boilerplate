@@ -4,8 +4,8 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <!--
       Consider adding this to your server config, and deleting it from the HTML.
       Here's the reason why: h5bp.com/i/378
@@ -13,15 +13,15 @@
         - Apache: goo.gl/5hM7g
     -->
     <title>Page Title</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
 
     <!-- place these files in the root dir
     <link href="favicon.ico" rel="shortcut icon" />
     <link href="apple-touch-icon.png" rel="apple-touch-icon" /> -->
 
-    <script src="javascripts/libs/modernizr-2.6.1.min.js"></script>
     <link href="stylesheets/all.css" rel="stylesheet" />
+    <script src="javascripts/libs/modernizr-2.6.2.min.js"></script>
     <!--
       This is a minimal Modernizr build. You can see what's included
       here: goo.gl/iEAjj
@@ -33,7 +33,7 @@
     -->
 </head>
 <body>
-    <div id="container">
+    <div id="wrap">
         <div id="layout">
           <div style="padding:20px 40px;">
             <header>
@@ -180,7 +180,7 @@
                 </fieldset>
 
                 <label id="text-field-label" for="text-field">This is what a form label looks like</label>
-                <textarea id="text-field" rows="10" cols="40">This is what a textarea looks like.</textarea>
+                <textarea id="text-field" placeholder="This is what a textarea looks like." rows="10" cols="40">This is what a textarea looks like.</textarea>
 
                 <input type="submit" />
                 <button type="button">Button!</button>
@@ -192,25 +192,17 @@
                     <h2>Article H2</h2>
                 </hgroup>
             </article>
-            <footer>
-                &copy;<script>var cur=new Date();var yr=cur.getFullYear();document.write(yr);</script>
-                <nav>
-                    <ul>
-                        <li><a href="#" title="link">link</a>
-                        <ul>
-                            <li><a href="#" title="sublink">sublink</a></li>
-                        </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
         </div><!-- /layout -->
-    </div><!-- /container -->
+    </div><!-- /wrap -->
+    <footer>
+        &copy;<script>var cur=new Date();var yr=cur.getFullYear();document.write(yr);</script>
+    </footer>
   <!-- Javascript at the bottom for fast page loading -->
   <!-- Grab Google CDN's jQuery. fall back to local if necessary. There are no protocols here - Read more goo.gl/keS0r -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script>!window.jQuery && document.write('<script src="javascripts/libs/jquery-1.8.0.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="javascripts/libs/jquery-1.8.2.min.js"><\/script>')</script>
   <!-- scripts -->
+  <script src="javascripts/libs/log.js"></script>
   <script src="javascripts/app/application.js"></script>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. -->
   <!--[if lt IE 7 ]>

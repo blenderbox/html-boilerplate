@@ -1,22 +1,25 @@
-// usage: log('inside coolFunc', this, arguments);
-window.log = function f(){ log.history = log.history || []; log.history.push(arguments); if(this.console) { var args = arguments, newarr; args.callee = args.callee.caller; newarr = [].slice.call(args); if (typeof console.log === 'object') log.apply.call(console.log, console, newarr); else console.log.apply(console, newarr);}};
-
-(function(a){function b(){}for(var c="assert,count,debug,dir,dirxml,error,exception,group,groupCollapsed,groupEnd,info,log,markTimeline,profile,profileEnd,time,timeEnd,trace,warn".split(","),d;!!(d=c.pop());){a[d]=a[d]||b;}})
-(function(){try{console.log();return window.console;}catch(a){return (window.console={});}}());
+//= require ../libs/log
 
 var APP = (function($) {
+
     var app = {},
         $el;
+
     // public functions
     // app.foo = function() {  };
+
     // private functions
     function init() {
         $('a[href=#]').attr('href', 'javascript:;');
+
         // Open links starting with "http(s)://" in a new window unless they're targeted at this host.
         $("a[href^=http]").click(open);
+
         // Set up the global ajax
         $.ajaxSetup({ cache: false, error: function errorLog(x, e) { log(x, e); }, type: 'POST' });
+
         if (!Modernizr.input.placeholder) { placeholder(); }
+
         /*
         yepnope([{
             test:Modernizr.csstransitions,
@@ -38,7 +41,7 @@ var APP = (function($) {
         $('input[' + attr + '!=""]').each(function(idx, el){
             $el = $(el);
             var d = $el.attr(attr);
-            if (d === undefined) { return; }
+            if (d === undefined || $el.attr('type') == "password") { return; }
             $el
                 .focus(function onFocus() {
                     $(this).removeClass(attr);
