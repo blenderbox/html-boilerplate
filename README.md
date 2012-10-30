@@ -35,10 +35,8 @@ Some of the common issues with browser compliance as well as the Blenderbox stan
 *    Write the CSS with a hierarchical approach.  For instance, if the header element appears on the top of the page, put the header element at the top of the CSS file.  
 *    All label tags attributes should be set to the value of the input field id so a user can click the label to select the field.  All fields should have a label if there is design for it.
 
-*    CLEARING 
-o    We have two options for clearing, first the clearfix class and second the clear class.  You can read more about the clearfix here http://www.webtoolkit.info/css-clearfix.html
-
-The basic clearing class, .clearfix, uses the ‘:after’ pseudo-selector to add clearing after the tag you are floating.  To clear after a floated element, you can use clearfix.  
+CLEARING 
+We have two options for clearing, first the clearfix class and second the clear class.  You can read more about the clearfix here http://www.webtoolkit.info/css-clearfix.html The basic clearing class, .clearfix, uses the ‘:after’ pseudo-selector to add clearing after the tag you are floating.  To clear after a floated element, you can use clearfix.  
 
 Examples of clearing after:
 
@@ -53,18 +51,20 @@ Examples:
     <div class=”clear”>&nbsp;</div>
 
 
-*    BUTTONS / IMAGE ROLLOVERS / IMAGES WITH TEXT
-o    Use <button type="submit"></button> instead of input type="submit"
-o    Do not use JavaScript to handle rollovers because it means browsers with JavaScript disabled will not see the correct styles for the site.  Instead, use CSS sprites, the technique outlined here - http://blog.blenderbox.com/2008/03/11/css-and-rollovers/.  Use the .ir class to apply image replacement styles to all image replacement.
+BUTTONS / IMAGE ROLLOVERS / IMAGES WITH TEXT
+
+*    Use <button type="submit"></button> instead of input type="submit"
+*    Do not use JavaScript to handle rollovers because it means browsers with JavaScript disabled will not see the correct styles for the site.  Instead, use CSS sprites, the technique outlined here - http://blog.blenderbox.com/2008/03/11/css-and-rollovers/.  Use the .ir class to apply image replacement styles to all image replacement.
 
 For images with text like logos, follow the same principle to make the page more SEO Friendly.
 
-*    IMAGES
-o    Cut out as much white-space from an image as you can.  
-o    Save .png files instead of .gif files when you can.  
-o    Save .gif files when there are few colors or the image is a vector to optimize for performance and quality.
-o    Save .jpg files at 'High' in the Save for Web settings when using Photoshop.  
-o    All images should have alt tags describing the image and their height and width attributes should be set to aid with browser performance.
+IMAGES
+
+*    Cut out as much white-space from an image as you can.  
+*    Save .png files instead of .gif files when you can.  
+*    Save .gif files when there are few colors or the image is a vector to optimize for performance and quality.
+*    Save .jpg files at 'High' in the Save for Web settings when using Photoshop.  
+*    All images should have alt tags describing the image and their height and width attributes should be set to aid with browser performance.
 
 
 ## 3.0 - Template Delivery
