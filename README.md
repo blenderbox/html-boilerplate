@@ -7,20 +7,20 @@ This document is a list of guidelines, tips, and examples for creating HTML, Jav
 
 ## 1.0    - HTML
 
-•    Use the default package for directory structure and the base styles.
-•    Do not use in-line JavaScript and never use in-line CSS.
-•    Keep scripts at the bottom of the page and CSS links in the head of the page to help with page load performance.
-•    Do not use tables when you can avoid it, and most likely, you can avoid it.
-•    Only use ids when there is only one element on the page that needs style — otherwise use a class.
-•    Make sure all images have an alt attribute.
+*    Use the default package for directory structure and the base styles.
+*    Do not use in-line JavaScript and never use in-line CSS.
+*    Keep scripts at the bottom of the page and CSS links in the head of the page to help with page load performance.
+*    Do not use tables when you can avoid it, and most likely, you can avoid it.
+*    Only use ids when there is only one element on the page that needs style — otherwise use a class.
+*    Make sure all images have an alt attribute.
 
 ## 1.1    - CSS NAMING CONVENTIONS
 
-•    Do not make the CSS overly complicated, but rather let the styles cascade where reasonable and applicable while using as little mark up as necessary.
-•    When starting a project, begin by styling the basic HTML elements.  If no design is provided for that, please confirm that it is not needed.
-•    Organize the CSS into logical sections such as HTML, classes (site wide only), layout, promos, etc. as seen in the '/stylesheets/all.css' file. 
-•    Make sure all links and buttons have a rollover state.  If you cannot find a rollover or on state in a PSD, please contact project management and let them know and they will provide you with one.
-•    Use lowercase and dashes for  for ids and classes.
+*    Do not make the CSS overly complicated, but rather let the styles cascade where reasonable and applicable while using as little mark up as necessary.
+*    When starting a project, begin by styling the basic HTML elements.  If no design is provided for that, please confirm that it is not needed.
+*    Organize the CSS into logical sections such as HTML, classes (site wide only), layout, promos, etc. as seen in the '/stylesheets/all.css' file. 
+*    Make sure all links and buttons have a rollover state.  If you cannot find a rollover or on state in a PSD, please contact project management and let them know and they will provide you with one.
+*    Use lowercase and dashes for  for ids and classes.
 
 Example:
 
@@ -31,11 +31,11 @@ Example:
 
 Some of the common issues with browser compliance as well as the Blenderbox standards can be found below.
 
-•    Use the line-height attribute when vertically aligning a single line of text or input field.  This is often helpful when styling footers etc.
-•    Write the CSS with a hierarchical approach.  For instance, if the header element appears on the top of the page, put the header element at the top of the CSS file.  
-•    All label tags attributes should be set to the value of the input field id so a user can click the label to select the field.  All fields should have a label if there is design for it.
+*    Use the line-height attribute when vertically aligning a single line of text or input field.  This is often helpful when styling footers etc.
+*    Write the CSS with a hierarchical approach.  For instance, if the header element appears on the top of the page, put the header element at the top of the CSS file.  
+*    All label tags attributes should be set to the value of the input field id so a user can click the label to select the field.  All fields should have a label if there is design for it.
 
-•    CLEARING 
+*    CLEARING 
 o    We have two options for clearing, first the clearfix class and second the clear class.  You can read more about the clearfix here http://www.webtoolkit.info/css-clearfix.html
 
 The basic clearing class, .clearfix, uses the ‘:after’ pseudo-selector to add clearing after the tag you are floating.  To clear after a floated element, you can use clearfix.  
@@ -53,13 +53,13 @@ Examples:
     <div class=”clear”>&nbsp;</div>
 
 
-•    BUTTONS / IMAGE ROLLOVERS / IMAGES WITH TEXT
+*    BUTTONS / IMAGE ROLLOVERS / IMAGES WITH TEXT
 o    Use <button type="submit"></button> instead of input type="submit"
 o    Do not use JavaScript to handle rollovers because it means browsers with JavaScript disabled will not see the correct styles for the site.  Instead, use CSS sprites, the technique outlined here - http://blog.blenderbox.com/2008/03/11/css-and-rollovers/.  Use the .ir class to apply image replacement styles to all image replacement.
 
 For images with text like logos, follow the same principle to make the page more SEO Friendly.
 
-•    IMAGES
+*    IMAGES
 o    Cut out as much white-space from an image as you can.  
 o    Save .png files instead of .gif files when you can.  
 o    Save .gif files when there are few colors or the image is a vector to optimize for performance and quality.
@@ -69,9 +69,9 @@ o    All images should have alt tags describing the image and their height and w
 
 ## 3.0 - Template Delivery
 
-•    Please make sure the CSS and HTML on all pages validates.  You can use the Firefox web developer plug-in to test validation locally (Tools > Validate Local HTML and Tools > Validate Local CSS).
-•    Test the files in IE7, IE8, Firefox, and Safari.  
-•    Make sure there are no 404s before sending the final package.  This can most easily be accomplished by viewing the Net/Network tab in the Firebug extension or Webkit Developer Tools.
+*    Please make sure the CSS and HTML on all pages validates.  You can use the Firefox web developer plug-in to test validation locally (Tools > Validate Local HTML and Tools > Validate Local CSS).
+*    Test the files in IE7, IE8, Firefox, and Safari.  
+*    Make sure there are no 404s before sending the final package.  This can most easily be accomplished by viewing the Net/Network tab in the Firebug extension or Webkit Developer Tools.
 
 
 ## 4.0 - The default file directory
