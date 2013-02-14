@@ -129,10 +129,16 @@ input[type="password"],
 input[type="url"],
 input.input-field,
 textarea {
-  border:1px solid #bccccd; border-radius:0; padding:2px; -webkit-appearance:none;
+  border:1px solid #bccccd; border-radius:0; padding:2px;
+-webkit-appearance:none;
    -moz-border-radius:0;
 -webkit-border-radius:0;
         border-radius:0;
+   -moz-transition: border-color 0.15s ease-in;
+    -ms-transition: border-color 0.15s ease-in;
+     -o-transition: border-color 0.15s ease-in;
+-webkit-transition: border-color 0.15s ease-in;
+        transition: border-color 0.15s ease-in;
 }
 textarea { overflow:auto; vertical-align:top; resize:vertical; }
 
@@ -156,25 +162,27 @@ input.placeholder { color:#6e6d6b; }
 /* Focus */
 a:focus,
 button:focus,
+label:focus {
+  outline: 1px dashed #c01339;
+}
 input:focus,
-label:focus,
 select:focus,
-textarea:focus { outline:1px dashed #c01339; }
+textarea:focus {
+  border: 1px solid #5c96aa; outline: none;
+   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 
 /* Transition elements */
 a,
 button,
 .button {
-     -o-transition-duration:.15s;
-   -moz-transition-duration:.15s;
-    -ms-transition-duration:.15s;
--webkit-transition-duration:.15s;
-        transition-duration:.15s;
-     -o-transition-timing-function:ease-in;
-   -moz-transition-timing-function:ease-in;
-    -ms-transition-timing-function:ease-in;
--webkit-transition-timing-function:ease-in;
-        transition-timing-function:ease-in;
+   -moz-transition: color 0.15s ease-in;
+    -ms-transition: color 0.15s ease-in;
+     -o-transition: color 0.15s ease-in;
+-webkit-transition: color 0.15s ease-in;
+        transition: color 0.15s ease-in;
      -o-transition-property:background-color, border-color, color, opacity;
    -moz-transition-property:background-color, border-color, color, opacity;
     -ms-transition-property:background-color, border-color, color, opacity;
