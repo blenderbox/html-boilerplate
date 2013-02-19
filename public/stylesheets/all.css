@@ -156,7 +156,8 @@ td { vertical-align:top; }
 ::-moz-selection { background:#c01339; color:#fff; text-shadow:none; }
 ::selection { background:#c01339; color:#fff; text-shadow:none; }
 ::-webkit-input-placeholder { color:#6e6d6b; }
-::-moz-placeholder { color:#6e6d6b; }
+:-moz-placeholder { color:#6e6d6b; }
+:-ms-input-placeholder { color: #6e6d6b; }
 input.placeholder { color:#6e6d6b; }
 
 /* Focus */
