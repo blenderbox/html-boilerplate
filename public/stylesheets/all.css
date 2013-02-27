@@ -231,19 +231,17 @@ body > #wrap { height:auto; min-height:100%; }
 footer { clear:both; height:150px; margin-top:-150px; position:relative; } 
 .lt-ie9 body > #wrap { min-height:auto; }
 
-
 /* Responsiveness */
-@media (max-width: 768px) { }
-@media (min-width: 768px) and (max-width: 980px) { }
+@media (min-width:1200px) {
+  .inner { width:1160px; }
+}
 
-/* iPhone / touch */
-@media (max-width:480px) and (orientation:portrait) { }
-@media (max-width:480px) and (orientation:landscape) { }
+@media (max-width:979px) {
+  .inner { width:840px; }
+}
 
-/* Nexus S, iOS Devices, etc. */
-@media screen and (max-width:533px),
-       all and (max-device-width: 480px) and (orientation: landscape),
-       all and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media (max-width:840px) {
+  .inner { padding:0 40px; width:100%; }
 }
 
 @media print {
