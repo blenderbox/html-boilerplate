@@ -36,7 +36,7 @@ abbr[title] { border-bottom:1px dotted; }
 b,
 strong { font-weight:bold; }
 blockquote { color:#76888a; font-size:16px; font-style:italic; margin:1em 40px; padding:10px 0; }
-blockquote p { padding:0 }
+blockquote p { margin:0; }
 dfn { font-style:italic; }
 hr { border:0 #e2e6e6 solid; border-top-width:1px; clear:both; display:block; height:1px; margin:10px 0; }
 ins { background:#ff9; color:#000; text-decoration:none; }
