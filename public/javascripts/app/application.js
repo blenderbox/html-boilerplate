@@ -41,7 +41,7 @@ var APP = (function($) {
         $('input[' + attr + '!=""]').each(function(idx, el){
             $el = $(el);
             var d = $el.attr(attr);
-            if (d === undefined || $el.attr('type') == "password") { return; }
+            if (d === undefined || $el.attr('type') === 'password') { return; }
             $el
                 .focus(function onFocus() {
                     $(this).removeClass(attr);
