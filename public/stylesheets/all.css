@@ -219,6 +219,7 @@ button,
 .clearfix { *zoom:1; }
 .clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
 .alert { color:#ff0000; }
+.flip-h { -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); }
 
 /* LAYOUT */
 #wrap {  }
