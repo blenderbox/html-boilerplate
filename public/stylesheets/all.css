@@ -548,14 +548,14 @@ button,
 
 /*
   Sticky Footer
-  $footer-height:150px
+  $footer-height: 150px
 */
 html,
 body {
   height:100%;
 }
 
-#wrap {
+.wrap {
   height:auto;
   min-height:100%;
   /* must be same height as the footer */
@@ -569,7 +569,7 @@ footer {
   position:relative;
 }
 
-.lt-ie9 #wrap {
+.lt-ie9 .wrap {
   min-height:auto;
   padding-bottom:0;
 }
