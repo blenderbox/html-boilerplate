@@ -1,8 +1,8 @@
 /*
-  $link: #f47a4d;
-  $highlight: #c01339;
-  $hover: #c01339;
-  $placeholder: #6e6d6b;
+  $link: red;
+  $highlight: lime;
+  $hover: green;
+  $placeholder: whiteSmoke;
 */
 
 * {
@@ -65,7 +65,7 @@ textarea {
 
 /* Links */
 a {
-  color:#f47a4d;
+  color:red;
   text-decoration:none;
 }
 
@@ -74,7 +74,7 @@ a:visited {
 }
 
 a:hover {
-  color:#c01339;
+  color:green;
   text-decoration:none;
 }
 
@@ -374,7 +374,6 @@ input[type="password"],
 input[type="search"],
 input[type="tel"],
 input[type="url"],
-input.input-field,
 textarea {
   border:1px solid #bccccd;
   padding:2px;
@@ -382,11 +381,11 @@ textarea {
    -moz-border-radius:0;
 -webkit-border-radius:0;
         border-radius:0;
-   -moz-transition: border-color 0.15s ease-in;
-    -ms-transition: border-color 0.15s ease-in;
-     -o-transition: border-color 0.15s ease-in;
--webkit-transition: border-color 0.15s ease-in;
-        transition: border-color 0.15s ease-in;
+   -moz-transition:border-color 0.15s ease-in;
+    -ms-transition:border-color 0.15s ease-in;
+     -o-transition:border-color 0.15s ease-in;
+-webkit-transition:border-color 0.15s ease-in;
+        transition:border-color 0.15s ease-in;
 }
 
 input[type="number"] {
@@ -428,59 +427,59 @@ td {
 
 /* Fun things */
 ::-moz-selection {
-  background:#c01339;
+  background:lime;
   color:#fff;
   text-shadow:none;
 }
 
 ::selection {
-  background:#c01339;
+  background:lime;
   color:#fff;
   text-shadow:none;
 }
 
 ::-webkit-input-placeholder {
-  color:#6e6d6b;
+  color:whiteSmoke;
 }
 
 :-moz-placeholder {
-  color:#6e6d6b;
+  color:whiteSmoke;
 }
 
 :-ms-input-placeholder {
-  color: #6e6d6b;
+  color:whiteSmoke;
 }
 
 input.placeholder {
-  color:#6e6d6b;
+  color:whiteSmoke;
 }
 
 /* Focus */
 a:focus,
 button:focus,
 label:focus {
-  outline: 1px dashed #c01339;
+  outline:1px dashed #c01339;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid #5c96aa;
-  outline: none;
-   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
--webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border:1px solid #5c96aa;
+  outline:none;
+   -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+        box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Transition elements */
 a,
 button,
 .button {
-   -moz-transition: color 0.15s ease-in;
-    -ms-transition: color 0.15s ease-in;
-     -o-transition: color 0.15s ease-in;
--webkit-transition: color 0.15s ease-in;
-        transition: color 0.15s ease-in;
+   -moz-transition:color 0.15s ease-in;
+    -ms-transition:color 0.15s ease-in;
+     -o-transition:color 0.15s ease-in;
+-webkit-transition:color 0.15s ease-in;
+        transition:color 0.15s ease-in;
      -o-transition-property:background-color, border-color, color, opacity;
    -moz-transition-property:background-color, border-color, color, opacity;
     -ms-transition-property:background-color, border-color, color, opacity;
@@ -549,7 +548,7 @@ button,
 
 /*
   Sticky Footer
-  $footer-height: 150px
+  $footer-height:150px
 */
 html,
 body {
@@ -600,6 +599,7 @@ footer {
   }
 }
 
+/* Print styles */
 @media print {
   * {
     background:transparent !important;
