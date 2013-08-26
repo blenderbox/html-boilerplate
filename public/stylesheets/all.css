@@ -114,6 +114,8 @@ blockquote p {
   margin:0;
 }
 
+em,
+i,
 dfn {
   font-style:italic;
 }
@@ -570,7 +572,7 @@ footer {
 }
 
 .lt-ie9 .wrap {
-  min-height:auto;
+  min-height:1px;
   padding-bottom:0;
 }
 
