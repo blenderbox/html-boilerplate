@@ -41,8 +41,8 @@ Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
     // our jQuery plugin magic.
     $.fn.pluginName = function(options){
 
-        return this.each(function() {
-            var $el = $(this),
+        return this.each(function(idx, el) {
+            var $el = $(el),
                 key = 'pluginName';
 
             // Return early if this element already has a plugin instance
@@ -50,11 +50,8 @@ Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
                 return $el.data(key);
             }
 
-            // Pass options to plugin constructor
-            var pluginName = (new $.pluginName(this, $el, options));
-
             // Store plugin object in this element's data
-            $el.data(key, pluginName);
+            $el.data(key, new $.pluginName(el, $el, options));
         });
 
     };
