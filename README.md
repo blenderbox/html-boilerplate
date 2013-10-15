@@ -65,7 +65,7 @@ Example:
     }
 
 
-*    Partials are named _partial.scss
+*    Partials are named _partial.scss - This is a common naming convention that indicates this file isn't meant to be compiled by itself. It likely has dependancies that would make it impossible to compile by itself. Personally I like dashes in the "actual" filename though, like _dropdown-menu.scss.
 *    Variablize All Common Numbers, and Numbers with Meaning
 *    Variablize All Colors
 
