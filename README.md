@@ -11,7 +11,6 @@ This document is a list of guidelines, tips, and examples for creating HTML, Jav
 *    Do not use in-line JavaScript and never use in-line CSS.
 *    Keep scripts at the bottom of the page and CSS links in the head of the page to help with page load performance.
 *    Do not use tables when you can avoid it, and most likely, you can avoid it.
-*    Only use ids when there is only one element on the page that needs style — otherwise use a class.
 *    Make sure all images have an alt attribute.
 
 ## 1.1    - CSS
