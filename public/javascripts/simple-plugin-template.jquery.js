@@ -7,7 +7,7 @@ Replace all instances of 'pluginName;' with your plugin name
 Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
 */
 
-(function($, undefined){
+;(function($, undefined){
     $.pluginName = function(el, $el, options){
         // To avoid scope issues, use 'base' instead of 'this'
         // to reference this class from internal events and functions.
@@ -46,12 +46,11 @@ Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
                 key = 'pluginName';
 
             // Return early if this element already has a plugin instance
-            if ($el.data(key)) {
-                return $el.data(key);
+            if (!$el.data(key)) {
+                // Store plugin object in this element's data
+                $el.data(key, new $.pluginName(el, $el, options));
             }
 
-            // Store plugin object in this element's data
-            $el.data(key, new $.pluginName(el, $el, options));
         });
 
     };
