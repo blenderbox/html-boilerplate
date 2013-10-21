@@ -17,9 +17,6 @@ Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
         base.$el = $el;
         base.el = el;
 
-        // Add a reverse reference to the DOM object
-        base.$el.data("pluginName", base);
-
         function init(){
             base.options = $.extend({},$.pluginName.defaults, options);
 
