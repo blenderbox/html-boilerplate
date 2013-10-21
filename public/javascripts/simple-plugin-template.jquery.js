@@ -42,7 +42,7 @@ Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
             var $el = $(el),
                 key = 'pluginName';
 
-            // Return early if this element already has a plugin instance
+            // Only create the plugin instance if it doesn't exist
             if (!$el.data(key)) {
                 // Store plugin object in this element's data
                 $el.data(key, new $.pluginName(el, $el, options));
