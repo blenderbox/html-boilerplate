@@ -26,7 +26,15 @@ This document is a list of guidelines, tips, and examples for creating HTML, Jav
 
 Example:
 
-    .search-results {  }
+
+    .weather {
+      background: LightCyan;
+    }
+
+    .weather > h3 {
+      border-bottom: 1px solid white;
+    }
+
 
 ## 2.1  - CSS EXTENSIONS (Sass/Less) Style Guide
 
