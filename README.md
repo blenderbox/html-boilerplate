@@ -95,10 +95,12 @@ Example:
 
 
 * Only use one var declaration and put each variable on its own line
- 
-    var a,
-        b,
-        z;
+
+
+        var a,
+            b,
+            z;
+
 
 ## 3.0 - TIPS TO FOLLOW
 
