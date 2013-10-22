@@ -70,42 +70,46 @@ Example:
 
 ## 3.0 JavaScript
 
-* Use the module pattern
+Use the module pattern
 
 
-
-        var APP = (function($, undefined) {
-            'use strict';
-        
-            var app = {},
-                $el;
-        
-            // define public functions
-            app.foo = function() {  };
-        
-            // define private functions
-            function init() {
-                // Init the plugin
-            }
-            // Call the init function on load
-            $(init);
-            return app;
-        } (jQuery));
+    var APP = (function($, undefined) {
+        'use strict';
+    
+        var app = {},
+            $el;
+    
+        // define public functions
+        app.foo = function() {  };
+    
+        // define private functions
+        function init() {
+            // Init the plugin
+        }
+        // Call the init function on load
+        $(init);
+        return app;
+    } (jQuery));
  
 
+Only use one var declaration and put each variable on its own line
 
-* Only use one var declaration and put each variable on its own line
+
+    var a,
+        b,
+        z;
 
 
-        var a,
-            b,
-            z;
-
-* Use the exactly equal to (equal value and equal type) instead of ==
+Use the exactly equal to (equal value and equal type) instead of ==
 
 Example:
 
-        ===
+        1 === '1'
+
+Don't leave extra spaces.
+
+Validate your JavaScript with a linter such as http://www.jshint.com/ which can be installed as a plugin in most editors.
+
 
 ## 3.0 - TIPS TO FOLLOW
 
