@@ -73,24 +73,26 @@ Example:
 * Use the module pattern
 
 
-    var APP = (function($, undefined) {
-        'use strict';
-    
-        var app = {},
-            $el;
-    
-        // define public functions
-        app.foo = function() {  };
-    
-        // define private functions
-        function init() {
-            // Init the plugin
-        }
-        // Call the init function on load
-        $(init);
-        return app;
-    } (jQuery));
+
+        var APP = (function($, undefined) {
+            'use strict';
+        
+            var app = {},
+                $el;
+        
+            // define public functions
+            app.foo = function() {  };
+        
+            // define private functions
+            function init() {
+                // Init the plugin
+            }
+            // Call the init function on load
+            $(init);
+            return app;
+        } (jQuery));
  
+
 
 * Only use one var declaration and put each variable on its own line
  
