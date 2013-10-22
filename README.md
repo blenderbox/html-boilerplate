@@ -101,6 +101,11 @@ Example:
             b,
             z;
 
+* Use the exactly equal to (equal value and equal type) instead of ==
+
+Example:
+
+        ===
 
 ## 3.0 - TIPS TO FOLLOW
 
