@@ -1,6 +1,6 @@
 //= require ../libs/log
 
-var APP = (function($) {
+var APP = (function($, undefined) {
     'use strict';
 
     var app = {},
