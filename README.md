@@ -150,7 +150,7 @@ IMAGES
 *    Save .png files instead of .gif files when you can.
 *    Save .gif files when there are few colors or the image is a vector to optimize for performance and quality.
 *    Save .jpg files at 'High' in the Save for Web settings when using Photoshop.
-*    All images should have alt tags describing the image and their height and width attributes should be set to aid with browser performance.
+*    All images should have alt tags describing the image.
 
 
 ## 4.0 - Template Delivery
