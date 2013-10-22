@@ -13,7 +13,7 @@ This document is a list of guidelines, tips, and examples for creating HTML, Jav
 *    Do not use tables when you can avoid it, and most likely, you can avoid it.
 *    Make sure all images have an alt attribute.
 
-## 1.1    - CSS
+## 2.0    - CSS
 
 *    Do not make the CSS overly complicated, but rather let the styles cascade where reasonable and applicable while using as little mark up as necessary.
 *    When starting a project, begin by styling the basic HTML elements.  If no design is provided for that, please confirm that it is not needed.
@@ -28,7 +28,7 @@ Example:
 
     .search-results {  }
 
-## 1.2  - CSS EXTENSIONS (Sass/Less) Style Guide
+## 2.1  - CSS EXTENSIONS (Sass/Less) Style Guide
 
 *    List @extend(s) First - Knowing right off the bat that this class inherits another whole set of rules from elsewhere is good.
 *    List "Regular" Styles Next
@@ -68,9 +68,37 @@ Example:
 *    Variablize All Common Numbers, and Numbers with Meaning
 *    Variablize All Colors
 
+## 3.0 JavaScript
+
+* Use the module pattern
 
 
-## 2.0 - TIPS TO FOLLOW
+    var APP = (function($, undefined) {
+        'use strict';
+    
+        var app = {},
+            $el;
+    
+        // define public functions
+        app.foo = function() {  };
+    
+        // define private functions
+        function init() {
+            // Init the plugin
+        }
+        // Call the init function on load
+        $(init);
+        return app;
+    } (jQuery));
+ 
+
+* Only use one var declaration and put each variable on its own line
+ 
+    var a,
+        b,
+        z;
+
+## 3.0 - TIPS TO FOLLOW
 
 Some of the common issues with browser compliance as well as the Blenderbox standards can be found below.
 
@@ -96,11 +124,12 @@ Examples:
     <div class=”clear”>&nbsp;</div>
 
 
-BUTTONS / IMAGE ROLLOVERS / IMAGES WITH TEXT
+BUTTONS
 
-*    Use <button type="submit"></button> instead of input type="submit"
+Use the button tag because it can be more reliably styled in every browser
 
-For images with text like logos, follow the same principle to make the page more SEO Friendly.
+    <button type="submit"></button>
+
 
 IMAGES
 
@@ -111,13 +140,13 @@ IMAGES
 *    All images should have alt tags describing the image and their height and width attributes should be set to aid with browser performance.
 
 
-## 3.0 - Template Delivery
+## 4.0 - Template Delivery
 
 *    Please make sure the CSS and HTML on all pages validates.  You can use the HTML5 validator to address any issues http://html5.validator.nu/
 *    Test the files in IE8+, Firefox, Chrome, and Safari.
 
 
-## 4.0 - The default file directory
+## 5.0 - The default file directory
 
     /images
         logo.gif – The logo for the project
@@ -144,7 +173,7 @@ IMAGES
     humans.txt – Read more: http://goo.gl/IjffW
     robots.txt – Read more: http://goo.gl/JzIqS
 
-## 5.0 - IE Targeted Styles
+## 6.0 - IE Targeted Styles
 
 If you want to style for IE specifically, use the following classes that are added to the HTML node via conditional statements and Modernizr.
 
