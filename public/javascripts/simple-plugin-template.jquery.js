@@ -9,22 +9,22 @@ Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
 
 ;(function($, undefined){
   $.pluginName = function(el, $el, options){
-    // To avoid scope issues, use 'base' instead of 'this'
+    // To avoid scope issues, use '_this' instead of 'this'
     // to reference this class from internal events and functions.
-    var base = this;
+    var _this = this;
 
     // Access to jQuery and DOM versions of element
-    base.$el = $el;
-    base.el = el;
+    _this.$el = $el;
+    _this.el = el;
 
     function init(){
-      base.options = $.extend({},$.pluginName.defaults, options);
+      _this.options = $.extend({},$.pluginName.defaults, options);
 
       // Put your initialization code here
     }
 
     // Sample Function, Uncomment to use
-    // base.functionName = function(paramaters){
+    // _this.functionName = function(paramaters){
     //
     // };
 
