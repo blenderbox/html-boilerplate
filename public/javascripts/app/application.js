@@ -45,7 +45,7 @@ var APP = (function($, undefined) {
   }
 
   function open(e) {
-    var href = this.getAttribute("href");
+    var href = this.getAttribute('href');
     // If we're linking to a different domain, stop the normal behavior and open in a new window.
     if (window.location.host !== href.split('/')[2]) {
       e.preventDefault();
