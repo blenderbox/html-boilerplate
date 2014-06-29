@@ -134,7 +134,11 @@ We have two options for clearing, first the clearfix class and second the clear 
 
 Examples of clearing after:
 
-    <div class=”float clearfix”>Content that is floating</div>
+    <div class=”clearfix”>
+      <div class="float-left">
+        Content that is floating
+      </div>
+    </div>
 
 
 If you need to use a block element to clear a float, please use a div with a non-breaking space.
@@ -208,3 +212,5 @@ IE8 - lt-ie9
 To target browsers that do not have JavaScript support, use the no-js class.
 
     .no-js body { background:light-blue; }
+
+Generate all the icons you need for every devise here [realfavicongenerator.net](http://realfavicongenerator.net/)
