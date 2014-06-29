@@ -213,4 +213,6 @@ To target browsers that do not have JavaScript support, use the no-js class.
 
     .no-js body { background:light-blue; }
 
+## 7.0 Icons
+
 Generate all the icons you need for every devise here [realfavicongenerator.net](http://realfavicongenerator.net/)
