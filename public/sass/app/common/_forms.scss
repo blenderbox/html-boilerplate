@@ -1,0 +1,152 @@
+
+/* Forms */
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button:active,
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
+table button,
+table input {
+  *overflow: auto;
+}
+
+button,
+select,
+input[type="button"],
+input[type="file"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Consistent box sizing and appearance  */
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* reset weird iOS styles */
+input[type="text"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  border: 1px solid $col-input-border;
+  padding: 2px;
+-webkit-appearance: none;
+  @include border-radius(0);
+  @include transition(border-color 0.15s ease-in);
+}
+
+input[type="number"] {
+  width: 40px;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid $col-hover;
+  outline: none;
+  @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+}
+
+
+/* Colors for form validity */
+input:valid,
+textarea:valid {}
+
+input:invalid,
+textarea:invalid {}
+
+
+::-webkit-input-placeholder {
+  color: $col-placeholder;
+}
+
+:-moz-placeholder {
+  color: $col-placeholder;
+}
+
+:-ms-input-placeholder {
+  color: $col-placeholder;
+}
+
+input.placeholder {
+  color: $col-placeholder;
+}

@@ -1,0 +1,22 @@
+
+/*
+  Sticky Footer
+*/
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  height: auto;
+  min-height: 100%;
+  /* must be same height as the footer */
+  padding-bottom: $footer-height;
+}
+
+footer {
+  clear: both;
+  height: $footer-height;
+  margin-top: -$footer-height;
+  position: relative;
+}

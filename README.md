@@ -216,3 +216,27 @@ To target browsers that do not have JavaScript support, use the no-js class.
 ## 7.0 Icons
 
 Generate all the icons you need for every devise here [realfavicongenerator.net](http://realfavicongenerator.net/)
+
+## 8.0 Compiling
+
+We are compiling the SASS into one file with [npm](https://www.npmjs.org/) and [Grunt](http://gruntjs.com/)).  We assume you have npm installed.
+
+Install grunt client with
+
+    sudo npm install -g grunt-cli
+
+***
+
+Assuming that the Grunt CLI has been installed, it's very easy to start working with Grunt:
+
+Change to the project's root directory.
+
+Install project dependencies with
+
+    npm install
+
+Run Grunt with
+
+    grunt
+
+That's really all there is to it. Installed Grunt tasks can be listed by running grunt --help.

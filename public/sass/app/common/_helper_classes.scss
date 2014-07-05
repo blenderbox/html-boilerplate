@@ -1,0 +1,21 @@
+
+/* CLASSES */
+.alert {
+  color: $col-alert;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.flip-h {
+  @include transform(scaleX(-1));
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}

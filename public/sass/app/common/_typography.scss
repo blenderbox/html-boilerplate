@@ -1,0 +1,178 @@
+
+/* Typography */
+
+body,
+button,
+input,
+select,
+textarea {
+  color: $col-default;
+  font: 15px sans-serif;
+}
+
+/* Links */
+a {
+  color: $col-link;
+  text-decoration: none;
+
+  &:visited { }
+
+  &:hover {
+    color: $col-hover;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+a:focus,
+button:focus,
+label:focus {
+  outline: 1px dashed $col-link;
+}
+
+p {
+  margin: 10px 0;
+  padding: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  color: $col-blockquote;
+  font-size: 16px;
+  font-style: italic;
+  margin: 1em 40px;
+  padding: 10px 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+em,
+i,
+dfn {
+  font-style: italic;
+}
+
+hr {
+  border: 0 $col-hr solid;
+  border-top-width: 1px;
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: 10px 0;
+}
+
+ins {
+  background: $col-alt;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: $col-alt;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 34px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Redeclare monospace font family:h5bp.com/j */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+/* Position subscript and superscript content without affecting line-height:h5bp.com/k */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

@@ -1,0 +1,36 @@
+/* Lists */
+dd {
+  margin: 0 0 0 40px;
+}
+
+ul,
+ol {
+  padding: 10px 10px 10px 30px;
+}
+
+ul li {
+  background: transparent 0 6px no-repeat;
+  // We use an image for consistency between browsers
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNpidHFxYQACQSA2BuI9LFDObqjALCYoA4RBIA0ksAckAxVIBwgwAMyyBfjDQxpjAAAAAElFTkSuQmCC);
+  list-style: none;
+  padding: 0 0 8px 10px;
+}
+
+ol {
+}
+
+ol li {
+  list-style: decimal;
+  margin: 0 0 0 10px;
+  padding: 0 0 8px 0;
+}
+
+nav {
+  ul,
+  ol,
+  li {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+}

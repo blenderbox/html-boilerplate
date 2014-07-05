@@ -1,0 +1,8 @@
+
+/* Transition elements */
+a,
+button,
+.button {
+  @include transition(color 0.15s ease-in);
+  @include transition-property(background-color, border-color, color, opacity);
+}
