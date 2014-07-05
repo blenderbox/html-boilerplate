@@ -40,7 +40,7 @@ Call the plugin with $('jquery-selector').pluginName({ foo:'custom-setting' });
 
     return this.each(function(idx, el) {
       var $el = $(el),
-        key = 'pluginName';
+          key = 'pluginName';
 
       // Only create the plugin instance if it doesn't exist
       if (!$el.data(key)) {

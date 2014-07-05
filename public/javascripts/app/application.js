@@ -5,7 +5,7 @@ var APP = (function($, undefined) {
   'use strict';
 
   var app = {},
-    $el;
+      $el;
 
   // public functions
   // app.foo = function() {  };
@@ -44,16 +44,20 @@ var APP = (function($, undefined) {
     */
   }
 
+  // Open all links to external resources in a new window.
   function open(e) {
     e.preventDefault();
-    var href = this.getAttribute("href");
-    if (window.location.host !== href.split('/')[2]) {
-      window.open(href);
+    var w = window,
+        href = e.currentTarget.getAttribute("href");
+
+    if (w.location.host !== href.split('/')[2]) {
+      w.open(href);
     } else {
-      window.location = href;
+      w.location = href;
     }
   }
 
+  // If the browser does not support the placeholder attribute, add it on focus.
   function placeholder() {
     var attr = 'placeholder';
     $('input[' + attr + '!=""]').each(function(idx, el){
