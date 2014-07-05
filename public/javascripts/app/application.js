@@ -46,14 +46,11 @@ var APP = (function($, undefined) {
 
   // Open all links to external resources in a new window.
   function open(e) {
-    e.preventDefault();
-    var w = window,
-        href = e.currentTarget.getAttribute("href");
-
-    if (w.location.host !== href.split('/')[2]) {
-      w.open(href);
-    } else {
-      w.location = href;
+    var href = this.getAttribute('href');
+    // If we're linking to a different domain, stop the normal behavior and open in a new window.
+    if (window.location.host !== href.split('/')[2]) {
+      e.preventDefault();
+      window.open(href);
     }
   }
 
