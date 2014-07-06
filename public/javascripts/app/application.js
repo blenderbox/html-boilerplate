@@ -1,5 +1,3 @@
-//= require ../libs/debounce
-//= require ../libs/log
 
 var APP = (function($, undefined) {
   'use strict';
@@ -64,7 +62,9 @@ var APP = (function($, undefined) {
       $el
         .focus(function onFocus() {
           $(this).removeClass(attr);
-          if (this.value === d) { this.value = ''; }
+          if (this.value === d) {
+            this.value = '';
+          }
         })
         .blur(function onBlur() {
           if ($.trim(this.value) === '') {
