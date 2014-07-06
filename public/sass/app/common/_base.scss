@@ -13,10 +13,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/**
- * Remove default margin.
- */
-
 body {
   background: $col-background;
   margin: 0;
@@ -35,7 +31,6 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* Fun things */
 ::-moz-selection {
   background: $col-highlight;
   color: #fff;

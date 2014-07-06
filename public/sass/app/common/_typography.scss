@@ -30,7 +30,6 @@ a {
   }
 }
 
-
 p {
   margin: 20px 0;
   padding: 0;
@@ -54,8 +53,7 @@ blockquote {
 }
 
 em,
-i,
-dfn {
+i {
   font-style: italic;
 }
 
@@ -105,14 +103,4 @@ h5 {
 
 h6 {
   font-size: 14px;
-}
-
-q {
-  quotes: none;
-
-  &:before,
-  &:after {
-    content: "";
-    content: none;
-  }
 }
