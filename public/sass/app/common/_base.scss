@@ -5,37 +5,6 @@
   @include box-sizing(border-box);
 }
 
-/* HTML5 display definitions */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
-
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-audio:not([controls]) {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-/* Base */
 html {
   font-size: 100%;
   overflow-y: auto;
@@ -44,25 +13,26 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/**
+ * Remove default margin.
+ */
+
 body {
   background: $col-background;
   margin: 0;
 }
 
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
+audio,
+canvas,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
-/* Correct overflow not hidden in IE9 */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Figures */
-figure {
-  margin:0;
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* Fun things */

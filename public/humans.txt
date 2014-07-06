@@ -1,19 +1,18 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+# the humans responsible & colophon
+# humanstxt.org
 
 
-/* TEAM */
+# TEAM
   Agency: Blenderbox
   Site: http://www.blenderbox.com
   Twitter: @blenderbox
   Location: Brooklyn, NY
 
   <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+  Site:
+  Twitter:
+  Location:
 
-/* SITE */
+# TECHNOLOGY COLOPHON
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: Modernizr, jQuery, Normalize.css

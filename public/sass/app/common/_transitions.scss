@@ -1,8 +1,7 @@
-
-/* Transition elements */
 a,
 button,
-.button {
-  @include transition(color 0.15s ease-in);
+.button,
+input[type="submit"] {
+  @include transition(color $transition-timing $transition-function);
   @include transition-property(background-color, border-color, color, opacity);
 }

@@ -4,16 +4,20 @@ $col-alert: #ff0000;
 $col-alt: #999;
 $col-background: #fff;
 $col-blockquote: #76888a;
-$col-default: #444;
-$col-link: red;
-$col-highlight: lime;
-$col-hover: green;
+$col-default: #080D09;
+$col-link: #8AA6BF;
+$col-highlight: #BDD9F2;
+$col-hover: #BDD9F2;
 $col-hr: #e2e6e6;
-$col-input-border: pink;
-$col-placeholder: whiteSmoke;
+$col-input-border: #3F5F73;
+$col-placeholder: #e9e9e9;
 
 // Dimensions
 $body-width-max: 1020px;
 $body-width-min: 320px;
 $footer-height: 150px;
 
+// Transitions
+$transition-timing: 0.2s;
+$transition-function: ease-in-out;
+$transition-function-dramatic: cubic-bezier(0.645, 0.045, 0.355, 1.000);

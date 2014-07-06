@@ -1,8 +1,10 @@
-
-/* Forms */
 form {
   margin: 0;
 }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
 
 fieldset {
   border: 0;
@@ -16,40 +18,6 @@ label {
   font-weight: bold;
 }
 
-legend {
-  border: 0;
-  *margin-left: -7px;
-  padding: 0;
-}
-
-button,
-input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-button,
-input {
-  line-height: normal;
-  *overflow: visible;
-}
-
-button:active,
-.button:active {
-  position: relative;
-  top: 1px;
-}
-
-/* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
-table button,
-table input {
-  *overflow: auto;
-}
-
 button,
 select,
 input[type="button"],
@@ -57,36 +25,6 @@ input[type="file"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/* Consistent box sizing and appearance  */
-input[type="checkbox"],
-input[type="radio"] {
-  padding: 0;
-  *height: 13px;
-  *width: 13px;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
 }
 
 /* reset weird iOS styles */
@@ -100,32 +38,55 @@ input[type="tel"],
 input[type="url"],
 textarea,
 select {
+  background: #fff;
   border: 1px solid $col-input-border;
-  padding: 2px;
--webkit-appearance: none;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 8px;
   @include border-radius(0);
-  @include transition(border-color 0.15s ease-in);
+  @include transition(border-color $transition-timing $transition-function);
+
+  &:focus {
+    border: 1px solid $col-hover;
+    outline: none;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  }
 }
 
 input[type="number"] {
-  width: 40px;
+  width: 60px;
 }
 
 textarea {
-  overflow: auto;
+  height: 120px;
   resize: vertical;
   vertical-align: top;
 }
 
+// Button Styles
+button,
+input[type="submit"],
+.button {
+  background: $col-link;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 10px;
 
-input:focus,
-select:focus,
-textarea:focus {
-  border: 1px solid $col-hover;
-  outline: none;
-  @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+
+  &:focus {
+    border: none;
+    outline: 1px dashed $col-link;
+  }
+
+  &:hover {
+    background: $col-hover;
+  }
 }
-
 
 /* Colors for form validity */
 input:valid,
@@ -133,7 +94,6 @@ textarea:valid {}
 
 input:invalid,
 textarea:invalid {}
-
 
 ::-webkit-input-placeholder {
   color: $col-placeholder;

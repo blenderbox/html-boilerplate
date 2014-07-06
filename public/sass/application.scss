@@ -1,9 +1,7 @@
 // Import our compass mixins
-@import 'compass/css3/background-size',
-        'compass/css3/border-radius',
+@import 'compass/css3/border-radius',
         'compass/css3/box-shadow',
         'compass/css3/box-sizing',
-        'compass/css3/images',
         'compass/css3/transform',
         'compass/css3/transition';
 
@@ -11,10 +9,11 @@
 @import 'app/config',
         'app/mixins',
         'app/extensions',
-        'app/base',
         // 'app/fonts',
         // 'app/icons',
 
+        'app/common/normalize',
+        'app/common/base',
         'app/common/typography',
         'app/common/forms',
         'app/common/lists',
