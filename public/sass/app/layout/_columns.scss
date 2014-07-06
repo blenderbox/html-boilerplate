@@ -4,4 +4,8 @@
   max-width: $body-width-max;
   min-width: $body-width-min;
   padding: 0 20px;
+
+  img {
+    max-width: 100%;
+  }
 }

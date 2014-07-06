@@ -876,6 +876,10 @@ input[type="submit"] {
   min-width: 320px;
   padding: 0 20px;
 }
+/* line 8, ../sass/app/layout/_columns.scss */
+.inner img {
+  max-width: 100%;
+}
 
 /*
   Sticky Footer
