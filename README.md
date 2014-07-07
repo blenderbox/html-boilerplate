@@ -1,6 +1,8 @@
 # Boiling hot HTML Boilerplate
 ## Blenderbox Guidelines for HTML, CSS, and JavaScript
 
+# This needs to be updated as of 2014.07.07
+
 ## INTRODUCTION
 
 This document is a list of guidelines, tips, and examples for creating HTML, JavaScript and CSS for Blenderbox projects.  Where applicable, please follow these guidelines to create a clean, SEO friendly website that adheres to Blenderbox's best practices.
