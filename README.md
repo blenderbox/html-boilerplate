@@ -38,7 +38,7 @@ Example:
     }
 
 
-## 2.1  - CSS EXTENSIONS (Sass/Less) Style Guide
+## 2.1  - CSS Preprocessor (Sass/Less) Style Guide
 
 *    List @extend(s) First - Knowing right off the bat that this class inherits another whole set of rules from elsewhere is good.
 *    List "Regular" Styles Next
@@ -175,13 +175,13 @@ IMAGES
 
 ## 5.0 - The default file directory
 
+    /fonts
+
     /images
-        logo.gif – The logo for the project
 
     /javascripts
         /app - All page specific Javascripts go here.
             application.js - All application wide JavaScript goes here.  This is where you start the JavaScript development.
-            css3.js – add css3 transitions here if they’re not supported by the browser
 
         /libs – A folder with libraries written by someone else. jQuery, belatedpng, modernizer, should be here.
             If you add new libraries, place them here.
@@ -190,7 +190,6 @@ IMAGES
             modernizr-{version}.min.js – A JavaScript library for HTML5 tests. http://www.modernizr.com/ This should be included in the Head of your page to add HTML5 elements to IE.  Review the file to see what tests are available and visit the website if you need to add more tests.
             request_interval.js - a shim for request animation support.
 
-        plugin-template.jquery.js – A template for creating a jQuery plugin.
         simple-plugin-template.jquery.js – A simpler jQuery plugin template.
 
     /stylesheets
