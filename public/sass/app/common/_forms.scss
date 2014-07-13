@@ -47,7 +47,7 @@ select {
   @include transition(border-color $transition-timing $transition-function);
 
   &:focus {
-    border: 1px solid $col-hover;
+    border-color: $col-hover;
     outline: none;
     @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
   }

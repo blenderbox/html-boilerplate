@@ -727,7 +727,7 @@ input[type="tel"]:focus,
 input[type="url"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #bdd9f2;
+  border-color: #bdd9f2;
   outline: none;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
