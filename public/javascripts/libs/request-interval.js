@@ -6,7 +6,7 @@
     <script>
       var interval = {},
           TIMING = 500;
-      interval = requstInterval(someFunction, TIMING);
+      interval = requestInterval(someFunction, TIMING);
       clearRequestInterval(interval);
     </script>
 */
