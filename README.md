@@ -1,6 +1,8 @@
 # Boiling hot HTML Boilerplate
 ## Blenderbox Guidelines for HTML, CSS, and JavaScript
 
+[Blenderbox HTML boilerplate](http://blenderbox.github.io/html-boilerplate/)
+
 # This needs to be updated as of 2014.07.07
 
 ## INTRODUCTION
