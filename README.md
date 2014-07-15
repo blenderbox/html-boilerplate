@@ -197,7 +197,7 @@ IMAGES
     /stylesheets
         all.css
 
-    index.html - A basic file for starting the site with most relevant HTML elements for style.
+    index.html – A basic file for starting the site with most relevant HTML elements for style.
     humans.txt – Read more: http://goo.gl/IjffW
     robots.txt – Read more: http://goo.gl/JzIqS
 
