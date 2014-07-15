@@ -13,10 +13,7 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.md]
-trim_trailing_whitespace = false
-
-[*.slim]
+[{*.md,*.slim}]
 trim_trailing_whitespace = false
 
 [*.py]
