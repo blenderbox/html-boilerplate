@@ -435,16 +435,21 @@ th {
 }
 
 /* apply a natural box layout model to all elements [http://www.paulirish.com/2012/box-sizing-border-box-ftw/] */
-/* line 4, ../sass/app/common/_base.scss */
-*,
-*:before,
-*:after {
+/* line 2, ../sass/app/common/_base.scss */
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 8, ../sass/app/common/_base.scss */
+/* line 7, ../sass/app/common/_base.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 11, ../sass/app/common/_base.scss */
 html {
   font-size: 100%;
   overflow-y: auto;
@@ -453,13 +458,13 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 16, ../sass/app/common/_base.scss */
+/* line 19, ../sass/app/common/_base.scss */
 body {
   background: white;
   margin: 0;
 }
 
-/* line 25, ../sass/app/common/_base.scss */
+/* line 28, ../sass/app/common/_base.scss */
 audio,
 canvas,
 img,
@@ -468,20 +473,20 @@ video {
   vertical-align: middle;
 }
 
-/* line 29, ../sass/app/common/_base.scss */
+/* line 32, ../sass/app/common/_base.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 34, ../sass/app/common/_base.scss */
+/* line 37, ../sass/app/common/_base.scss */
 ::-moz-selection {
   background: #bdd9f2;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 40, ../sass/app/common/_base.scss */
+/* line 43, ../sass/app/common/_base.scss */
 ::selection {
   background: #bdd9f2;
   color: #fff;
