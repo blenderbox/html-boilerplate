@@ -218,6 +218,8 @@ To target browsers that do not have JavaScript support, use the no-js class.
 
 ## 7.0 Icons
 
+We use icon fonts for our icons.  To generate them, use [icomoon](https://icomoon.io/app/) Select the icons you want or upload SVGs of the icons you need and the select download.  On the download screen, change the font name to 'icons', check 'encode and embed font in css,' and select 'use class selector.' Then download the font and store the zip in your project in case someone needs to make changes to it later by uploading the selection.json file to icomoon.
+
 Generate all the icons you need for every devise here [realfavicongenerator.net](http://realfavicongenerator.net/)
 
 ## 8.0 Compiling
