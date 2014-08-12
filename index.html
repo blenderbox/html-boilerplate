@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <meta name="description" content="HTML, SASS, and JavaScript Boilerplate : Base HTML and CSS for beginning a project for Blenderbox">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>HTML, SASS, and JavaScript Boilerplate by blenderbox</title>
+    <title>HTML, SASS, and JavaScript Boilerplate</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/blenderbox/html-boilerplate">View on GitHub</a>
-    <div class="shell">
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>HTML, SASS, and JavaScript Boilerplate</h1>
-            <h2>Base HTML and CSS for beginning a project for Blenderbox</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/blenderbox/html-boilerplate">View on GitHub</a>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/blenderbox/html-boilerplate/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/blenderbox/html-boilerplate/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+          <h1 id="project_title">HTML, SASS, and JavaScript Boilerplate</h1>
+          <h2 id="project_tagline">Base HTML and CSS for beginning a project for Blenderbox</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/blenderbox/html-boilerplate/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/blenderbox/html-boilerplate/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a name="boiling-hot-html-boilerplate" class="anchor" href="#boiling-hot-html-boilerplate"><span class="octicon octicon-link"></span></a>Boiling hot HTML Boilerplate</h1>
 
 <h2>
 <a name="blenderbox-guidelines-for-html-css-and-javascript" class="anchor" href="#blenderbox-guidelines-for-html-css-and-javascript"><span class="octicon octicon-link"></span></a>Blenderbox Guidelines for HTML, CSS, and JavaScript</h2>
+
+<p><a href="http://blenderbox.github.io/html-boilerplate/">Blenderbox HTML boilerplate</a></p>
+
+<h1>
+<a name="this-needs-to-be-updated-as-of-20140707" class="anchor" href="#this-needs-to-be-updated-as-of-20140707"><span class="octicon octicon-link"></span></a>This needs to be updated as of 2014.07.07</h1>
 
 <h2>
 <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>INTRODUCTION</h2>
@@ -91,7 +81,7 @@
 </code></pre>
 
 <h2>
-<a name="21----css-extensions-sassless-style-guide" class="anchor" href="#21----css-extensions-sassless-style-guide"><span class="octicon octicon-link"></span></a>2.1  - CSS EXTENSIONS (Sass/Less) Style Guide</h2>
+<a name="21----css-preprocessor-sassless-style-guide" class="anchor" href="#21----css-preprocessor-sassless-style-guide"><span class="octicon octicon-link"></span></a>2.1  - CSS Preprocessor (Sass/Less) Style Guide</h2>
 
 <ul>
 <li>   List <a href="https://github.com/extend" class="user-mention">@extend</a>(s) First - Knowing right off the bat that this class inherits another whole set of rules from elsewhere is good.</li>
@@ -230,15 +220,12 @@
 <a name="50---the-default-file-directory" class="anchor" href="#50---the-default-file-directory"><span class="octicon octicon-link"></span></a>5.0 - The default file directory</h2>
 
 <pre><code>/fonts
-    Place fonts here
 
 /images
-    Place images here
 
 /javascripts
     /app - All page specific Javascripts go here.
         application.js - All application wide JavaScript goes here.  This is where you start the JavaScript development.
-        css3.js – add css3 transitions here if they’re not supported by the browser
 
     /libs – A folder with libraries written by someone else. jQuery, belatedpng, modernizer, should be here.
         If you add new libraries, place them here.
@@ -252,7 +239,7 @@
 /stylesheets
     all.css
 
-index.html - A basic file for starting the site with most relevant HTML elements for style.
+index.html – A basic file for starting the site with most relevant HTML elements for style.
 humans.txt – Read more: http://goo.gl/IjffW
 robots.txt – Read more: http://goo.gl/JzIqS
 </code></pre>
@@ -276,6 +263,8 @@ IE8 - lt-ie9</p>
 
 <h2>
 <a name="70-icons" class="anchor" href="#70-icons"><span class="octicon octicon-link"></span></a>7.0 Icons</h2>
+
+<p>We use icon fonts for our icons.  To generate them, use <a href="https://icomoon.io/app/">icomoon</a> Select the icons you want or upload SVGs of the icons you need and the select download.  On the download screen, change the font name to 'icons', check 'encode and embed font in css,' and select 'use class selector.' Then download the font and store the zip in your project in case someone needs to make changes to it later by uploading the selection.json file to icomoon.</p>
 
 <p>Generate all the icons you need for every devise here <a href="http://realfavicongenerator.net/">realfavicongenerator.net</a></p>
 
@@ -305,21 +294,27 @@ IE8 - lt-ie9</p>
 
 <p>That's really all there is to it. Installed Grunt tasks can be listed by running grunt --help.</p>
       </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/blenderbox">blenderbox</a> can be found on <a href="https://github.com/blenderbox/html-boilerplate">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
     </div>
 
-    
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">HTML, SASS, and JavaScript Boilerplate maintained by <a href="https://github.com/blenderbox">blenderbox</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-592025-23");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
   </body>
 </html>
