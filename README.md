@@ -3,7 +3,7 @@
 
 [Blenderbox HTML boilerplate](http://blenderbox.github.io/html-boilerplate/)
 
-# This needs to be updated as of 2014.07.07
+## Last edited 09.15.2014
 
 ## INTRODUCTION
 
