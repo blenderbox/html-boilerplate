@@ -183,10 +183,12 @@ IMAGES
 
     /javascripts
         /app - All page specific Javascripts go here.
-            application.js - All application wide JavaScript goes here.  This is where you start the JavaScript development.
+            application.js - All application wide JavaScript goes here.
+                This is where you start the JavaScript development.
 
-        /libs – A folder with libraries written by someone else. jQuery, belatedpng, modernizer, should be here.
+        /libs – A folder with libraries written by someone else. jQuery, modernizer, should be here.
             If you add new libraries, place them here.
+
             jquery-{version}.min.js – the jQuery library.
             log.js - Add logging support to browsers without console.log
             modernizr-{version}.min.js – A JavaScript library for HTML5 tests. 
