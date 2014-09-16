@@ -189,7 +189,11 @@ IMAGES
             If you add new libraries, place them here.
             jquery-{version}.min.js – the jQuery library.
             log.js - Add logging support to browsers without console.log
-            modernizr-{version}.min.js – A JavaScript library for HTML5 tests. http://www.modernizr.com/ This should be included in the Head of your page to add HTML5 elements to IE.  Review the file to see what tests are available and visit the website if you need to add more tests.
+            modernizr-{version}.min.js – A JavaScript library for HTML5 tests. 
+                http://modernizr.com/download/#-input-shiv-cssclasses-load
+                This should be included in the Head of your page to add HTML5 elements to IE.
+                Review the file to see what tests are available and visit the website if you 
+                need to add more tests.
             request_interval.js - a shim for request animation support.
 
         simple-plugin-template.jquery.js – A simpler jQuery plugin template.
