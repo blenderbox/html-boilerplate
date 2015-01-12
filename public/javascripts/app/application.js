@@ -71,7 +71,8 @@ var APP = (function($, undefined) {
             $(this).addClass(attr);
             this.value = d;
           }
-        }).blur();
+        })
+        .blur();
     });
   }
   // Call the init function on load
