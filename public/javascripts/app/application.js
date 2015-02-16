@@ -19,8 +19,8 @@ var APP = (function($, undefined) {
     $.ajaxSetup({
       cache: false,
       error: function errorLog(x, e) {
-        if (typeof log !== 'undefined') {
-          log(x, e);
+        if (typeof console !== 'undefined') {
+          console.log(x, e);
         }
       },
       type: 'POST'
@@ -75,7 +75,9 @@ var APP = (function($, undefined) {
         .blur();
     });
   }
+
   // Call the init function on load
   $(init);
+
   return app;
 } (jQuery));
