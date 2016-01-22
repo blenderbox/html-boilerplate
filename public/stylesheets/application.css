@@ -963,8 +963,8 @@ footer {
   }
 
   @page {
-    margin: 0.5cm;
-}
+    margin: 0.6in;
+  }
 
   /* line 51, ../sass/app/_print.scss */
   p,
