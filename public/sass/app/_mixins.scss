@@ -8,18 +8,12 @@
 
 // Clearfix
 // --------
-// For clearing floats like a boss h5bp.com/q
+// For clearing floats like a boss
 @mixin clearfix() {
-  *zoom: 1;
-
-  &:before,
-  &:after {
-    display: table;
-    content: " ";
-  }
-
-  &:after {
+  &::after {
     clear: both;
+    content: '';
+    display: table;
   }
 }
 
@@ -35,59 +29,10 @@
 // Triangles
 // http://apps.eky.hk/css-triangle-generator/
 @mixin triangle() {
-  border-style:solid;
-  content:' ';
-  display:block;
-  height:0px;
-  position:absolute;
-  width:0px;
-}
-
-// Keyframes mixin
-// --------------------
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
-}
-
-@mixin animation($animation) {
-     -moz-animation: $animation;
-  -webkit-animation: $animation;
-       -o-animation: $animation;
-      -ms-animation: $animation;
-   -khtml-animation: $animation;
-          animation: $animation;
-}
-
-// Flexbox
-// -------------------------
-@mixin flex() {
-  // flexbox setup
-   display: -webkit-box;
-      display: -moz-box;
-   display: -ms-flexbox;
-  display: -webkit-flex;
-          display: flex;
-
-  -webkit-flex-flow: column;
-          flex-flow: column;
-     flex-direction: column;
-}
-
-@mixin flex-order($order) {
-  -webkit-box-ordinal-group: $order;
-     -moz-box-ordinal-group: $order;
-             -ms-flex-order: $order;
-              -webkit-order: $order;
-                      order: $order;
+  border-style: solid;
+  content: ' ';
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0;
 }
