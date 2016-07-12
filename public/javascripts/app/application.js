@@ -10,7 +10,7 @@ var APP = (function($, undefined) {
 
   // private functions
   function init() {
-    $('a[href=#]').attr('href', 'javascript:;');
+    $('a[href="#"]').attr('href', 'javascript:;');
 
     // Open links starting with "http(s)://" in a new window unless they're targeted at this host.
     $("a[href^=http]").click(open);
