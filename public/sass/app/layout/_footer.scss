@@ -1,7 +1,4 @@
-
-/*
-  Sticky Footer
-*/
+// Sticky Footer
 html,
 body {
   height: 100%;
@@ -13,7 +10,7 @@ body {
   padding-bottom: $footer-height;
 }
 
-footer {
+.footer {
   clear: both;
   height: $footer-height;
   margin-top: -$footer-height;

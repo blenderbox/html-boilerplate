@@ -1,18 +1,16 @@
+// scss-lint:disable PseudoElement, QualifyingElement, VendorPrefix
 form {
   margin: 0;
 }
 
-/**
- * Define consistent border, margin, and padding.
- */
-
+// Define consistent border, margin, and padding.
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* Indicate that 'label' will shift focus to the associated form element */
+// Indicate that 'label' will shift focus to the associated form element
 label {
   cursor: pointer;
   font-weight: bold;
@@ -23,11 +21,12 @@ select,
 input[type="button"],
 input[type="file"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.button, {
   cursor: pointer;
 }
 
-/* reset weird iOS styles */
+// Reset weird iOS styles
 input[type="text"],
 input[type="datetime"],
 input[type="email"],
@@ -38,27 +37,21 @@ input[type="tel"],
 input[type="url"],
 textarea,
 select {
-  background: #fff;
+  background: $col-white;
   border: 1px solid $col-input-border;
+  border-radius: 0;
   height: 34px;
   line-height: 34px;
   padding: 0 8px;
-  @include border-radius(0);
-  @include transition(border-color $transition-timing $transition-function);
+  transition: border-color $transition-timing $transition-function;
 
   &:focus {
     border-color: $col-hover;
     outline: none;
-    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
   }
 }
 
-input[type="number"] {
-  width: 60px;
-}
-
 textarea {
-  height: 120px;
   resize: vertical;
   vertical-align: top;
 }
@@ -68,8 +61,8 @@ button,
 input[type="submit"],
 .button {
   background: $col-link;
-  border: none;
-  color: #fff;
+  border: 0;
+  color: $col-white;
   font-weight: bold;
   padding: 4px 10px;
 
@@ -79,7 +72,7 @@ input[type="submit"],
   }
 
   &:focus {
-    border: none;
+    border: 0;
     outline: 1px dashed $col-link;
   }
 

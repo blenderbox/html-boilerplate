@@ -1,7 +1,8 @@
+// scss-lint:disable QualifyingElement
 a,
 button,
 .button,
 input[type="submit"] {
-  @include transition(color $transition-timing $transition-function);
-  @include transition-property(background-color, border-color, color, opacity);
+  transition: color $transition-timing $transition-function;
+  transition-property: background-color, border-color, color, opacity;
 }
