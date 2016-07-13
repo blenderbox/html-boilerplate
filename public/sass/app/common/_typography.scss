@@ -8,12 +8,10 @@ textarea {
   line-height: 1.4;
 }
 
-/* Links */
+// Links
 a {
   color: $col-link;
   text-decoration: none;
-
-  &:visited { }
 
   &:hover {
     color: $col-hover;
@@ -60,12 +58,11 @@ i {
 hr {
   border: 0 $col-hr solid;
   border-top-width: 1px;
+  box-sizing: content-box;
   clear: both;
   display: block;
   height: 1px;
   margin: 10px 0;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
 }
 
 h1,

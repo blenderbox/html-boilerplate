@@ -1,12 +1,13 @@
-/* Print styles */
+// Print styles
+// scss-lint:disable ImportantRule, QualifyingElement, VendorPrefix
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
     box-shadow: none !important;
-    text-shadow: none !important;
-    filter: none !important;
+    color: $col-black !important;
     -ms-filter: none !important;
+    filter: none !important;
+    text-shadow: none !important;
   }
 
   a,
@@ -14,18 +15,18 @@
     text-decoration: underline;
   }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
+  abbr[title]::after {
+    content: ' (' attr(title) ')';
   }
 
-  a[href^="javascript: "]:after,
-  a[href^="#"]:after {
-    content: "";
+  a[href^="javascript: "]::after,
+  a[href^="#"]::after {
+    content: '';
   }
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid $col-black;
     page-break-inside: avoid;
   }
 
@@ -43,7 +44,7 @@
   }
 
   @page {
-    margin: 0.6in;
+    margin: .6in;
   }
 
   p,

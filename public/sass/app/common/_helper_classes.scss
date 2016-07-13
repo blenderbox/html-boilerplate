@@ -6,17 +6,19 @@
   @include clearfix;
 }
 
+// scss-lint:disable VendorPrefix
 .flip-h {
-  @include transform(scaleX(-1));
+  -ms-filter: 'FlipH';
   filter: FlipH;
-  -ms-filter: "FlipH";
+  transform: scaleX(-1);
 }
 
 .flip-v {
-  @include transform(scaleY(-1));
+  -ms-filter: 'FlipV';
   filter: FlipV;
-  -ms-filter: "FlipV";
+  transform: scaleY(-1);
 }
+// scss-lint:enable VendorPrefix
 
 .hide {
   display: none;

@@ -1,8 +1,10 @@
 module.exports = function(grunt) {
 
+  // Load the plugins that provide the tasks.
+  require('load-grunt-tasks')(grunt);
+
   // Project configuration.
   grunt.initConfig({
-
     pkg: grunt.file.readJSON('package.json'),
 
     // Directory settings
@@ -13,46 +15,59 @@ module.exports = function(grunt) {
       sass: 'public/sass/',
     },
 
-    // Compile our Sass with compass
-    compass: {
+    // Auto-prefix the css
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%']
+      },
+      main: {
+        expand: true,
+        flatten: true,
+        src: '<%= DIRS.css %>*.css',
+        dest: '<%= DIRS.css %>'
+      }
+    },
+
+    // Compile our Sass
+    sass: {
       dist: {
-        options: {
-          sassDir: '<%= DIRS.sass %>',
-          cssDir: '<%= DIRS.css %>',
-          imagesDir: '<%= DIRS.images %>',
-          javascriptsDir: '<%= DIRS.js %>',
-          // outputStyle: 'compressed',
-          relativeAssets: true,
-          lineComments: false,
-        },
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-          '<%= grunt.template.today("yyyy-mm-dd") %> */',
+        files: {
+          '<%= DIRS.css %>application.css': '<%= DIRS.sass %>application.scss'
+        }
+      }
+    },
+
+    // Lint the Scss
+    scsslint: {
+      allFiles: [
+        '<%= DIRS.sass %>/**/*.scss',
+      ],
+      options: {
+        bundleExec: true,
+        config: '.scss-lint.yml',
+        reporterOutput: 'scss-lint-report.xml',
+        colorizeOutput: true
       },
     },
 
-    // Continuously watch our grunt settings, javascript files, and sass files to run grunt tasks
+    // Continuously watch our grunt settings, JavaScript files, and Sass files to run grunt tasks
     watch: {
       css: {
         files: ['<%= DIRS.sass %>**/*'],
-        tasks: ['compass'],
+        tasks: ['sass', 'autoprefixer'],
       },
       config: {
         files: [
           'Gruntfile.js',
         ],
-        tasks: ['compass'],
+        tasks: ['sass', 'autoprefixer'],
         options: {
           interrupt: true,
         },
       },
     },
-
   });
 
-  // Load the plugins that provide the tasks.
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   // Default task(s).
-  grunt.registerTask('default', ['compass', 'watch']);
-
+  grunt.registerTask('default', ['sass', 'autoprefixer']);
 };

@@ -1,20 +1,20 @@
-/* apply a natural box layout model to all elements [http://www.paulirish.com/2012/box-sizing-border-box-ftw/] */
-html {
-  @include box-sizing(border-box);
-}
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
+// Apply a natural box layout model to all elements [http://www.paulirish.com/2012/box-sizing-border-box-ftw/]
+// scss-lint:disable VendorPrefix
 html {
+  box-sizing: border-box;
   font-size: 100%;
-  overflow-y: auto;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: auto;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+// scss-lint:enable VendorPrefix
 
 body {
   background: $col-background;
@@ -29,6 +29,7 @@ video {
   vertical-align: middle;
 }
 
+// scss-lint:disable VendorPrefix
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -36,12 +37,13 @@ img {
 
 ::-moz-selection {
   background: $col-highlight;
-  color: #fff;
+  color: $col-white;
   text-shadow: none;
 }
+// scss-lint:enable VendorPrefix
 
 ::selection {
   background: $col-highlight;
-  color: #fff;
+  color: $col-white;
   text-shadow: none;
 }

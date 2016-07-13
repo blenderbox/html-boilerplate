@@ -1,15 +1,17 @@
-
 // Colors
-$col-alert: #ff0000;
+$col-black: #000;
+$col-white: #fff;
+
+$col-alert: #f00;
 $col-alt: #999;
-$col-background: #fff;
+$col-background: $col-white;
 $col-blockquote: #76888a;
-$col-default: #080D09;
-$col-link: #8AA6BF;
-$col-highlight: #BDD9F2;
-$col-hover: #BDD9F2;
+$col-default: #080d09;
+$col-link: #8aa6bf;
+$col-highlight: #bdd9f2;
+$col-hover: #bdd9f2;
 $col-hr: #e2e6e6;
-$col-input-border: #3F5F73;
+$col-input-border: #3f5f73;
 $col-placeholder: #e9e9e9;
 
 // Dimensions
@@ -18,6 +20,6 @@ $body-width-min: 320px;
 $footer-height: 150px;
 
 // Transitions
-$transition-timing: 0.2s;
+$transition-timing: .2s;
 $transition-function: ease-in-out;
-$transition-function-dramatic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+$transition-function-dramatic: cubic-bezier(.645, .045, .355, 1);
