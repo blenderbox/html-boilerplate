@@ -10,13 +10,9 @@ fieldset {
   padding: 0;
 }
 
-// Indicate that 'label' will shift focus to the associated form element
-label {
-  cursor: pointer;
-  font-weight: bold;
-}
-
+// Indicate that these form elements will shift focus
 button,
+label,
 select,
 input[type="button"],
 input[type="file"],

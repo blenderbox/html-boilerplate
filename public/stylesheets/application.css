@@ -520,11 +520,8 @@ fieldset {
   margin: 0;
   padding: 0; }
 
-label {
-  cursor: pointer;
-  font-weight: bold; }
-
 button,
+label,
 select,
 input[type="button"],
 input[type="file"],
