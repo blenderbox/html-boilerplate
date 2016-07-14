@@ -1,4 +1,11 @@
+// Breakpoints
+$break-laptop: 1068px;
+$break-phone-small: 426px;
+$break-phone-large: 580px;
+$break-tablet: 768px;
+
 // Colors
+// Color variables follow the pattern $col-<name>-<variation>
 $col-black: #000;
 $col-white: #fff;
 
@@ -19,7 +26,18 @@ $body-width-max: 1020px;
 $body-width-min: 320px;
 $footer-height: 150px;
 
+// Fonts
+// Font variables follow the pattern $font-<weight>
+$font-default: sans-serif;
+$font-bold: sans-serif;
+$font-medium: sans-serif;
+
 // Transitions
 $transition-timing: .2s;
 $transition-function: ease-in-out;
 $transition-function-dramatic: cubic-bezier(.645, .045, .355, 1);
+
+// Z-indexes
+$z-footer: 1;
+$z-header: 2;
+$z-nav: 3;

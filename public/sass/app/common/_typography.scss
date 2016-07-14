@@ -4,7 +4,7 @@ input,
 select,
 textarea {
   color: $col-default;
-  font: 15px sans-serif;
+  font: 15px $font-default;
   line-height: 1.4;
 }
 
