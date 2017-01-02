@@ -1,58 +1,83 @@
-
 var APP = (function($, undefined) {
   'use strict';
 
   var app = {},
       $el;
 
-  // public functions
-  // app.foo = function() {  };
-
-  // private functions
+  /**
+  * Initialize the basic app settings.
+  **/
   function init() {
-    $('a[href="#"]').attr('href', 'javascript:;');
+    cleanupLinks();
+    forms();
+    plugins();
+    polyfill();
+    initAjax();
+  }
 
-    // Open links starting with "http(s)://" in a new window unless they're targeted at this host.
-    $("a[href^=http]").click(open);
-
-    // Set up the global ajax
+  /*
+  * Set up the global ajax to be uncached and log errors
+  */
+  function initAjax() {
     $.ajaxSetup({
       cache: false,
       error: function errorLog(x, e) {
-        if (typeof console !== 'undefined') {
-          console.log(x, e);
-        }
-      },
-      type: 'POST'
+        console.log(x, e);
+      }
     });
-
-    if (!Modernizr.input.placeholder) {
-      placeholder();
-    }
-
-    /*
-    Yepnope is available through Modernizr.
-
-    Yepnope example usage:
-
-    yepnope([{
-      test:Modernizr.csstransitions,
-      nope:'/javascripts/app/css3.js'
-    }]);
-    */
   }
 
-  // Open all links to external resources in a new window.
-  function open(e) {
+  /**
+  * Fix links with hashes and open new links in another tab/window
+  **/
+  function cleanupLinks() {
+    $('a[href="#"]').attr('href', 'javascript:;');
+    // Open links starting with "http(s)://" in a new window unless they're targeted at this host.
+    $("a[href^=http]").click(open);
+  }
+
+  /*
+  * Initialize the forms
+  */
+  function forms() {
+    // Uncomment if you would like to auto-disable the form submit buttons.
+    // $('form').on('submit', onFormSubmit);
+  }
+
+  /*
+  * Disable the submit button on form submit.
+  * TODO: Make this re-enable buttons on form submission error.
+  */
+  function onFormSubmit(e) {
+    $(e.currentTarget)
+      .find('button').each(function(idx, el){
+        var $this = $(el),
+            disableText = $this.data('disable-with');
+        $this.attr('disabled', 'disabled');
+
+        if (disableText !== undefined) {
+          $this.text($this.data('disable-with'));
+        }
+      });
+  }
+
+  /*
+  * Open all links to external resources in a new window.
+  * @param {Object} event - the click event
+  */
+  function open(event) {
     var href = this.getAttribute('href');
     // If we're linking to a different domain, stop the normal behavior and open in a new window.
     if (window.location.host !== href.split('/')[2]) {
-      e.preventDefault();
-      window.open(href);
+      event.preventDefault();
+      var newWindow = window.open(href);
+      newWindow.opener = null;
     }
   }
 
-  // If the browser does not support the placeholder attribute, add it on focus.
+  /*
+  * If the browser does not support the placeholder attribute, add it on focus.
+  */
   function placeholder() {
     var attr = 'placeholder';
     $('input[' + attr + '!=""]').each(function(idx, el){
@@ -74,6 +99,20 @@ var APP = (function($, undefined) {
         })
         .blur();
     });
+  }
+
+  /*
+  * Initialize any plugins
+  */
+  function plugins() {}
+
+  /*
+  * Initialize any polyfills
+  */
+  function polyfill() {
+    if (!Modernizr.input.placeholder) {
+      placeholder();
+    }
   }
 
   // Call the init function on load
