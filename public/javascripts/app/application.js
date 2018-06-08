@@ -34,6 +34,12 @@ var APP = (function($, undefined) {
     $('a[href="#"]').attr('href', 'javascript:;');
     // Open links starting with "http(s)://" in a new window unless they're targeted at this host.
     $("a[href^=http]").click(open);
+
+    // Add aria messaging to links that open popups or new windows.
+    // (Uncomment and src new-window-messaging.js in your base template.)
+    //
+    // $("a[href^=http], a[target^=_]").newWindowMessaging();
+    // $('.your-selector').newWindowMessaging({ popup: true });
   }
 
   /*
